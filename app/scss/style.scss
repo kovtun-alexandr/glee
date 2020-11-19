@@ -155,6 +155,66 @@
   }
 }
 
+.advantages{
+  &__inner{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fef7f0;
+    padding: 40px 0;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+    padding: 0px 40px 0px 123px;
+    &:nth-child(1){
+      background-image: url('../images/icons/hours.svg');
+      background-repeat: no-repeat;
+      background-position: 48px 10px;
+    }
+    &:nth-child(2){
+      background-image: url('../images/icons/delivery.svg');
+      background-repeat: no-repeat;
+      background-position: 48px 10px;
+    }
+    &:nth-child(3){
+      background-image: url('../images/icons/paymant.svg');
+      background-repeat: no-repeat;
+      background-position: 48px 10px;
+    }
+    &-title{
+      @extend %dmsans-700;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    &-descr{
+      line-height: 30px;
+    }
+  }
+}
+
+.products-week{
+  padding: 75px 0;
+  &__title{
+    margin-bottom: 35px;
+  }
+  &__sorting{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    &-btn{
+      @extend %dmsans-700;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      color: #8b8b8b;
+    }
+    &-btn + .products-week__sorting-btn{
+      margin-left: 30px;
+    }
+  }
+}
+
 .footer-top{
   display: flex;
   justify-content: space-between;
