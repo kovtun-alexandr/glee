@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header__inner{
@@ -82,6 +83,196 @@
   flex-grow: 1;
 }
 
+.main-slider{
+  &__inner{
+    padding-bottom: 45px;
+  }
+  &__item{
+    min-height: calc(100vh - 143px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__contant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    min-height: inherit;
+  }
+  &__title{
+    @extend %rubik-500;
+    font-size: 72px;
+    color: $title;
+    max-width: 470px;
+    margin-bottom: 25px;
+  }
+  &__subtitle{
+    @extend %rubik-400;
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $nav;
+    margin-bottom: 40px;
+  }
+  &__link{
+    @extend %rubik-500;
+    border: none;
+    background-color: $btn;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: -75px;
+    li{
+      padding: 0 5px;
+      button{
+        padding: 0;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        z-index: 1;
+        position: relative;
+        opacity: .3;
+        cursor: pointer;
+      }
+      &.slick-active{
+        button{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.advantages{
+  &__inner{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fef7f0;
+    padding: 40px 0;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+    padding: 0px 40px 0px 123px;
+    &:nth-child(1){
+      background-image: url('../images/icons/hours.svg');
+      background-repeat: no-repeat;
+      background-position: 48px 10px;
+    }
+    &:nth-child(2){
+      background-image: url('../images/icons/delivery.svg');
+      background-repeat: no-repeat;
+      background-position: 48px 10px;
+    }
+    &:nth-child(3){
+      background-image: url('../images/icons/paymant.svg');
+      background-repeat: no-repeat;
+      background-position: 48px 10px;
+    }
+    &-title{
+      @extend %dmsans-700;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    &-descr{
+      line-height: 30px;
+    }
+  }
+}
+
+.products-week{
+  padding: 75px 0;
+  &__title{
+    margin-bottom: 35px;
+  }
+  &__sorting{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    &-btn{
+      @extend %dmsans-700;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      color: #8b8b8b;
+      outline: transparent;
+      &.mixitup-control-active{
+        color: #191919;
+      }
+    }
+    &-btn + .products-week__sorting-btn{
+      margin-left: 30px;
+    }
+  }
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  &__item{
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      .products-week__item-btn{
+        transform: translateY(-50%);
+      }
+    }
+    &-image{
+      margin: 15px 0 80px;
+    }
+    &-link{
+      @extend %dmsans-500;
+      color: $title;
+      margin-bottom: 15px;
+    }
+    &-cost{
+      @extend %dmsans-700;
+      color: $accent;
+      margin-bottom: 15px;
+    }
+    &-btn{
+      position: absolute;
+      top: 50%;
+      display: flex;
+      transform: translateY(-9999px);
+      transition: all .2s;
+    }
+    &-search,
+    &-cart,
+    &-wishlist{
+      @extend %btn;
+      margin: 0 7px;
+      transition: all .3s;
+      &:hover{
+        background-color: $btn;
+        fill: #fff;
+      }
+    }
+  }
+}
+
+
+
 .footer-top{
   display: flex;
   justify-content: space-between;
@@ -141,13 +332,14 @@
     font-size: 12px;
   }
   &__form-btn{
-    border: none;
-    background-color: $btn;
-    color: #fff;
     padding: 9px 18px;
     position: relative;
     margin-left: -3px;
     top: 1px;
+    cursor: pointer;
+    border: none;
+    background-color: $btn;
+    color: #fff;
   }
 }
 
