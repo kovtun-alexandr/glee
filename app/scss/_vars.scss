@@ -33,3 +33,17 @@ $btn: #a3bbc8;
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
+
+%btn{
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+  fill: $btn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+}
