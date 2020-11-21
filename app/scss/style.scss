@@ -197,26 +197,9 @@
   &__title{
     margin-bottom: 35px;
   }
-  &__sorting{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    &-btn{
-      @extend %dmsans-700;
-      background-color: transparent;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      color: #8b8b8b;
-      outline: transparent;
-      &.mixitup-control-active{
-        color: #191919;
-      }
-    }
-    &-btn + .products-week__sorting-btn{
-      margin-left: 30px;
-    }
-  }
+}
+
+.products{
   &__inner{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -232,41 +215,51 @@
     padding: 20px;
     position: relative;
     overflow: hidden;
+    max-width: 270px;
+    width: 100%;
     &:hover{
-      .products-week__item-btn{
+      .products__link-box{
         transform: translateY(-50%);
       }
     }
-    &-image{
-      margin: 15px 0 80px;
-    }
-    &-link{
-      @extend %dmsans-500;
-      color: $title;
-      margin-bottom: 15px;
-    }
-    &-cost{
-      @extend %dmsans-700;
+  }
+  &__img-box{
+    margin: 0 0 55px;
+    min-height: 200px;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__title{
+    @extend %dmsans-500;
+    color: $title;
+    margin-bottom: 15px;
+  }
+  &__price{
+    @extend %dmsans-700;
+    margin-bottom: 15px;
+    &-new{
       color: $accent;
-      margin-bottom: 15px;
     }
-    &-btn{
-      position: absolute;
-      top: 50%;
-      display: flex;
-      transform: translateY(-9999px);
-      transition: all .2s;
-    }
-    &-search,
-    &-cart,
-    &-wishlist{
-      @extend %btn;
-      margin: 0 7px;
-      transition: all .3s;
-      &:hover{
-        background-color: $btn;
-        fill: #fff;
-      }
+  }
+  &__link-box{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    transform: translateY(-9999px);
+    transition: all .2s;
+    max-width: 175px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  &__link{
+    @extend %btn;
+    margin: 0 7px;
+    transition: all .3s;
+    &:hover{
+      background-color: $btn;
+      fill: #fff;
     }
   }
 }
