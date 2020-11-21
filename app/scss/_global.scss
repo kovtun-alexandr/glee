@@ -27,3 +27,24 @@ body{
   font-size: 36px;
   text-align: center;
 }
+
+.sorting{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  .sort-btn{
+    @extend %dmsans-700;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #8b8b8b;
+    outline: transparent;
+    & + .sort-btn{
+      margin-left: 30px;
+    }
+    &.mixitup-control-active{
+      color: #191919;
+    }
+  }
+}
