@@ -79,10 +79,6 @@
   }
 }
 
-.main{
-  flex-grow: 1;
-}
-
 .main-slider{
   &__inner{
     padding-bottom: 45px;
@@ -280,7 +276,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 40px 35px;
+    &-link{
+      display: block;
+      min-height: inherit;
+      padding: 40px 35px;
+    }
     &-title,
     &-subtitle{
       @extend %dmsans-700;

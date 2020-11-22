@@ -6,10 +6,18 @@ $(function(){
     fade: true,
     autoplay:true,
     autoplaySpeed: 2000
-  })
+  });
 
-  var mixer = mixitup('.products__inner');
+  var mixerProduct = mixitup('.products__inner', {
+    selectors: {
+      control: '.products-week__sorting-btn'
+    }
+  });
 
-  var mixer = mixitup('.design__items');
-  
+  var mixerDesign = mixitup('.design__items', {
+    selectors: {
+      control: '.design__sorting-btn'
+    }
+  });
+
 });
