@@ -28,6 +28,10 @@ body{
   text-align: center;
 }
 
+.main{
+  flex-grow: 1;
+}
+
 .sorting{
   display: flex;
   justify-content: center;
