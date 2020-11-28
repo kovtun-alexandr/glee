@@ -20,9 +20,19 @@ $default: #222933;
   font-weight: 700;
 }
 
+%poppins-600{
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
 %poppins-700{
   font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
+}
+
+%rubik-300{
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
 }
 
 %rubik-400{
@@ -33,6 +43,11 @@ $default: #222933;
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+
+%rubik-700{
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
 }
 
 %btn{
@@ -57,7 +72,7 @@ $default: #222933;
   @return m#{i}n(#{$numbers});
 }
 
-@-webkit-keyframes pulse{
+@keyframes pulse{
   0%{
     -webkit-transform: scale(.6);
     opacity: 0;
