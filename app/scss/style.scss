@@ -649,4 +649,21 @@
   }
 }
 
+.terms-conditions{
+  display: flex;
+  padding-top: 120px;
+  @extend %rubik-400;
+  line-height: 30px;
+  color: $title;
+  &__title{
+    @extend %rubik-500;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  &__text{
+    margin-bottom: 40px;
+  }
+}
+
 @import 'media';
