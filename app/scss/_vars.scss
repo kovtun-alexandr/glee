@@ -64,6 +64,14 @@ $default: #222933;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 }
 
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
