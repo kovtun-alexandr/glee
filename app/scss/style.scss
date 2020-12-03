@@ -219,12 +219,80 @@
       }
     }
   }
+  &__item--list{
+    max-width: 100%;
+    padding: 0;
+    min-height: 500px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: inherit;
+    box-shadow: none;
+    border-radius: 0;
+    @extend %rubik-400;
+    .products__link-box{
+      display: none;
+    }
+    .products__img-box{
+      margin: 0 30px 0 0;
+      min-height: 100%;
+      max-width: 370px;
+      width: 100%;
+      border: 1px solid #f2f2f2;
+      align-items: center;
+    }
+    .products__image{
+      width: 100%;
+    }
+    .products__content{
+      text-align: left;
+      padding: 90px 30px 70px;
+      .star{
+        display: block;
+      }
+    }
+    .products__title{
+      font-size: 40px;
+      color: #333;
+      margin-bottom: 25px;
+    }
+    .star{
+      display: block;
+      margin-bottom: 30px;
+    }
+    .products__price{
+      font-size: 30px;
+      margin-bottom: 40px;
+      &-new{
+        color: #333;
+      }
+    }
+    .products__text{
+      display: block;
+      line-height: 30px;
+      color: $title;
+      margin-bottom: 25px;
+    }
+    .products__link-block{
+      display: flex;
+      .products__link{
+        width: 50px;
+        height: 50px;
+        border-radius: 0;
+        margin: 0;
+        & + .products__link{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
   &__img-box{
     margin: 0 0 55px;
     min-height: 200px;
-    object-fit: cover;
     display: flex;
     align-items: flex-end;
+  }
+  &__image{
+    object-fit: cover;
   }
   &__title{
     @extend %dmsans-500;
@@ -257,6 +325,18 @@
       background-color: $btn;
       fill: #fff;
     }
+  }
+  &__content{
+    text-align: center;
+    .star{
+      display: none;
+    }
+  }
+  &__text{
+    display: none;
+  }
+  &__link-block{
+    display: none;
   }
 }
 
@@ -886,16 +966,6 @@
   }
 }
 
-.Rectangle_1 {
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: 774px;
-  top: 1895px;
-  width: 325px;
-  height: 111px;
-  z-index: 74;
-}
-
 .product{
   margin: 120px 0 80px;
   &__inner{
@@ -1044,7 +1114,6 @@
     height: 70px;
     border: 2px solid #f2f2f2;
     display: flex;
-    padding: 3px;
     margin-right: 20px;
   }
   &__image{
@@ -1067,7 +1136,9 @@
   }
 }
 
-.product-contant{
+.product-contant:nth-child(){
+  max-width: 870px;
+  width: 100%;
   &__list{
     display: flex;
     flex-wrap: wrap;
