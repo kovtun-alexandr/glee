@@ -13,13 +13,55 @@
 
 .menu__list{
   display: flex;
+  &-item{
+    @extend %rubik-500;
+    font-size: 15px;
+    color: $nav;
+    padding: 5px 0;
+    position: relative;
+    z-index: 2;
+    .menu__sub-list{
+      position: absolute;
+      width: max-content;
+      padding: 20px;
+      background-color: transparent;
+      transform: rotateX(90deg);
+      z-index: 1;
+      top: -15px;
+      left: -40%;
+      transition: all .3s;
+      box-shadow: 0px 7px 20px 0px rgba($btn, 0.3);
+    }
+    &:hover .menu__sub-list{
+      top: 25px;
+      background-color: #fff;
+      transform: rotateX(0deg);
+    }
+    .menu__sub-item{
+      margin: 10px 0 8px;
+      &:first-child{
+        margin-top: 0;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .menu__sub-link {
+      border-bottom: 1px solid transparent;
+      transform: rotateY();
+      padding-bottom: 2px;
+      transition: all .3s;
+      &:hover{
+        border-bottom: 1px solid $title;
+      }
+    }
+  }
   &-item + .menu__list-item{
     margin-left: 30px;
   }
   &-link{
-    @extend %rubik-500;
-    font-size: 15px;
-    color: $nav;
+    color: inherit;
+    padding-right: 5px;
   }
 }
 

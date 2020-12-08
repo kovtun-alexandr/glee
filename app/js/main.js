@@ -1,8 +1,8 @@
-$(function(){
+$(function () {
   const prefix = '$',
   postfix = '.00';
 
-  $('.production-tubs__top-item').on('click', function(e){
+  $('.production-tubs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.production-tubs__top-item').removeClass('production-tubs__top-item--active');
     $(this).addClass('production-tubs__top-item--active');
@@ -56,34 +56,42 @@ $(function(){
 
   $('.rpice-slider').ionRangeSlider({
     type: "double",
-    onStart: function (data){
+    onStart: function (data) {
       $('.filter-rpice__from').text(prefix.concat(data.from, postfix));
       $('.filter-rpice__to').text(prefix.concat(data.to, postfix));
     },
-    onChange: function (data){
+    onChange: function (data) {
       $('.filter-rpice__from').text(prefix.concat(data.from, postfix));
       $('.filter-rpice__to').text(prefix.concat(data.to, postfix));
     }
   });
 
   $('.main-slider__inner').slick({
-    dots:true,
-    arrows:false,
+    dots: true,
+    arrows: false,
     fade: true,
-    autoplay:true,
+    autoplay: true,
     autoplaySpeed: 2000
   });
 
-  var mixerProduct = mixitup('.products__inner', {
-    selectors: {
-      control: '.products-week__sorting-btn'
-    }
-  });
+  const containerProduct = $('.products__inner');
+  
+  if(document.querySelector('.products__inner')){
+    var mixer = mixitup(containerProduct, {
+      selectors: {
+        control: '.products-week__sorting-btn'
+      }
+    });
+  }
 
-  var mixerDesign = mixitup('.design__items', {
-    selectors: {
-      control: '.design__sorting-btn'
-    }
-  });
+  const containerDesing = $('.design__items');
+
+  if(document.querySelector('.design__items')){
+    var mixer = mixitup(containerDesing, {
+      selectors: {
+        control: '.design__sorting-btn'
+      }
+    });
+  }
 
 });
