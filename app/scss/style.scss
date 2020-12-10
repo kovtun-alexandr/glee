@@ -73,10 +73,22 @@
     height: 50px;
     padding: 17px 0;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon{
+      width: 20px;
+      height: 20px;
+      fill: $title;
+    }
   }
   &-link--search{
     background-color: #edf1f4;
     margin-right: 20px;
+    .icon{
+      width: 18px;
+      height: 18px;
+    }
   }
   &-link--heart,
   &-link--cart{
@@ -101,7 +113,11 @@
   &-link--menu{
     background-color: #a3bbc8;
     margin-left: 20px;
-    padding: 15px 0;
+    .icon{
+      width: 22px;
+      height: 22px;
+      fill: #fff;
+    }
   }
   &-image{
     margin: 0 auto;
@@ -165,6 +181,11 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    .icon{
+      width: 23px;
+      height: 10px;
+      fill: #fff;
+    }
   }
   .slick-dots{
     display: flex;
@@ -203,30 +224,17 @@
   &__item{
     max-width: 370px;
     width: 100%;
-    padding: 0px 40px 0px 123px;
-    &:nth-child(1){
-      background-image: url('../images/icons/hours.svg');
-      background-repeat: no-repeat;
-      background-position: 48px 10px;
-    }
-    &:nth-child(2){
-      background-image: url('../images/icons/delivery.svg');
-      background-repeat: no-repeat;
-      background-position: 48px 10px;
-    }
-    &:nth-child(3){
-      background-image: url('../images/icons/paymant.svg');
-      background-repeat: no-repeat;
-      background-position: 48px 10px;
-    }
-    &-title{
-      @extend %dmsans-700;
-      font-size: 18px;
-      line-height: 40px;
-    }
-    &-descr{
-      line-height: 30px;
-    }
+    padding: 0px 40px 0px 85px;
+    background-repeat: no-repeat;
+    background-position: 0 13px;
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  &__item-descr{
+    line-height: 30px;
   }
 }
 
@@ -365,6 +373,10 @@
     @extend %btn;
     margin: 0 7px;
     transition: all .3s;
+    .icon{
+      width: 22px;
+      height: 20px;
+    }
     &:hover{
       background-color: $btn;
       fill: #fff;
@@ -432,6 +444,12 @@
     align-items: center;
     border: 1px solid #b3b7b5;
     border-radius: 5px;
+    color: $nav;
+    .icon{
+      width: 23px;
+      height: 10px;
+      fill: $nav;
+    }
   }
 }
 
@@ -491,6 +509,12 @@
     align-items: center;
     position: relative;
     z-index: 1;
+    .icon{
+      width: 23px;
+      height: 27px;
+      fill: #fff;
+      transform: translateX(2px);
+    }
     &::after{
       content: '';
       position: absolute;
@@ -517,7 +541,9 @@
     @extend %dmsans-700;
     color: #262626;
     margin-bottom: 6px;
-    svg{
+    .icon{
+      width: 7px;
+      height: 12px;
       margin-left: 10px;
     }
   }
@@ -852,26 +878,8 @@
     padding: 12px 0 14px 60px;
     @extend %dmsans-700;
     position: relative;
-    &::before{
-      content: '';
-      position: absolute;
-      width: 45px;
-      height: 40px;
-      background-position: center;
-      background-repeat: no-repeat;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    &:nth-child(1)::before{
-      background-image: url('../images/icons/letter.svg');
-    }
-    &:nth-child(2)::before{
-      background-image: url('../images/icons/speaker.svg');
-    }
-    &:nth-child(3)::before{
-      background-image: url('../images/icons/medal.svg');
-    }
+    background-position: left center;
+    background-repeat: no-repeat;
     &::after{
       content: '';
       width: 1px;
@@ -907,30 +915,8 @@
   &__item{
     padding-top: 86px;
     @extend %dmsans-700;
-    position: relative;
-    &::before{
-      content: '';
-      position: absolute;
-      width: 78px;
-      height: 64px;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    &:nth-child(1)::before{
-      background-image: url('../images/icons/clients.svg');
-    }
-    &:nth-child(2)::before{
-      background-image: url('../images/icons/delivery-2.svg');
-    }
-    &:nth-child(3)::before{
-      background-image: url('../images/icons/time.svg');
-    }
-    &:nth-child(4)::before{
-      background-image: url('../images/icons/brends.svg');
-    }
+    background-position: 50% 0;
+    background-repeat: no-repeat;
   }
   &__count{
     font-size: 36px;
@@ -974,6 +960,11 @@
     padding: 14px 15px;
     border-radius: 5px;
     width: 170px;
+    .icon{
+      width: 23px;
+      height: 10px;
+      fill: #fff;
+    }
   }
   &__contant{
     display: flex;
@@ -994,6 +985,11 @@
       border-radius: 50%;
       padding: 0;
       margin: 0 4px;
+      .icon{
+        width: 18px;
+        height: 18px;
+        fill: #888;
+      }
     }
   }
   &__name{
@@ -1509,14 +1505,18 @@
   }
   &__input{
     @extend %radio-hidden;
-    &:checked + .star-form__radio{
+    &:checked + .star-form__radio .icon{
       fill: #ffc35b;
     }
   }
-  &__radio{
+  &__radio {
     cursor: pointer;
-    fill: #f0f0f0;
-    &:hover{
+    .icon{
+      width: 18px;
+      height: 18px;
+      fill: #f0f0f0;
+    }
+    &:hover .icon{
       fill: #ffc35b;
     }
   }
@@ -1551,8 +1551,10 @@
       &:hover{
         border: 1px solid $btn;
       }
-      img{
-        margin: 0 auto;
+      .icon{
+        width: 23px;
+        height: 10px;
+        fill: $btn;
       }
     }
   }
