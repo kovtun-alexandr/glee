@@ -49,8 +49,8 @@ $(function () {
   $('.product-related__slide').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow: '<button class="product-related__prev"><img src="../images/icons/slick-left.svg" alt="Icon prev"></button>',
-    nextArrow: '<button class="product-related__next"><img src="../images/icons/slick-right.svg" alt="Icon next"></button>',
+    prevArrow: '<button class="product-related__prev"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button class="product-related__next"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#arrow-right"></use></svg></button>',
     centerPadding: '40px'
   })
 
