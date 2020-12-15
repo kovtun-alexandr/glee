@@ -1388,12 +1388,17 @@
 
 .comments{
   display: flex;
-  margin-bottom: 40px;
+  margin: 30px 0;
+  .comments{
+    padding: 30px 0;
+    margin-bottom: 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
   &__img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin: 8px 30px 0 0;
+    width: 100px;
+    height: 100px;
+    margin: 9px 30px 0 0;
     object-fit: cover;
   }
   &__content-top{
@@ -1402,13 +1407,16 @@
     margin-bottom: 10px;
   }
   &__content-name{
-    @extend %rubik-500;
-    color: #333;
+    @extend %rubik-700;
+    color: $nav;
     margin-right: 15px;
   }
   &__content-date{
+    @extend %rubik-400;
     border-left: 1px solid $title;
     padding-left: 15px;
+    font-size: 14px;
+    color: #9e9e9e;
     line-height: 1;
   }
   &__content-star{
@@ -1416,38 +1424,29 @@
     margin-right: 0;
   }
   &__content-text{
+    color: #565872;
     margin-bottom: 10px;
   }
   &__content-reply{
-    padding-left: 25px;
-    position: relative;
-    &::before{
-      content: '';
-      position: absolute;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='15px' height='14px'%3E%3Cpath fill-rule='evenodd' fill='rgb(141, 141, 141)' d='M5.835,3.669 L5.835,0.203 L0.001,6.269 L5.835,12.335 L5.835,8.782 C10.002,8.782 12.919,10.169 15.002,13.202 C14.169,8.869 11.668,4.536 5.835,3.669 Z'/%3E%3C/svg%3E");
-      top: 2px;
-      left: 0;
-      width: 15px;
-      height: 14px;
+    display: flex;
+    align-items: center;
+    color: #516278;
+    .icon{
+      width: 16px;
+      height: 16px;
+      fill: #516278;
+      margin-left: 5px;
     }
   }
 }
 
 .comments-form{
   &__title{
-    font-size: 22px;
-    color: #333;
-    padding-bottom: 15px;
-    margin-bottom: 40px;
-    position: relative;
-    &::before{
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 2px;
-      background-color: $btn;
-      bottom: 0;
-    }
+    font-size: 24px;
+    color: $nav;
+    line-height: 30px;
+    margin: 60px 0 50px;
+    @extend %rubik-700;
   }
   &__rating{
     margin-bottom: 30px;
@@ -1459,26 +1458,79 @@
     margin-bottom: 30px;
   }
   &__input{
-    max-width: 570px;
     width: 100%;
     height: 50px;
     border-radius: 0;
     border: 1px solid #f2f2f2;
-    padding: 0 20px;
+    padding: 0 50px 0 20px;
     &::placeholder{
       color: $footer-text;
+    }
+    &:focus{
+      border: 1px solid $accent;
+      outline: 0;
+      border-radius: 0;
+    }
+  }
+  &__input-after--name{
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/icons/input-name.svg');
+      width: 14px;
+      height: 14px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+  &__input-after--email{
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/icons/input-email.svg');
+      width: 18px;
+      height: 13px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
     }
   }
   &__textarea{
     display: block;
     width: 100%;
-    min-height: 225px;
+    min-height: 120px;
     border: 1px solid #f2f2f2;
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 20px 45px 20px 20px;
     resize: none;
     &::placeholder{
       color: $footer-text;
+    }
+    &:focus{
+      border: 1px solid $accent;
+      outline: 0;
+      border-radius: 0;
+    }
+  }
+  &__textarea-after{
+    display: block;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/icons/commit-textarea.svg');
+      width: 18px;
+      height: 15px;
+      top: 18px;
+      right: 20px;
+      background-repeat: no-repeat;
     }
   }
   &__btn{
@@ -1486,9 +1538,10 @@
     text-transform: uppercase;
     background-color: $btn;
     border: none;
-    padding: 10px 35px;
+    padding: 15px 35px;
     box-shadow: 0px 7px 20px 0px rgba($btn, 0.3);
     cursor: pointer;
+    position: relative;
   }
 }
 
@@ -1635,9 +1688,80 @@
     padding: 20px;
     color: $btn;
     font-size: 15px;
+    .icon{
+      width: 23px;
+      height: 10px;
+      fill: $btn;
+    }
   }
   .pagination{
     justify-content: flex-start;
+  }
+  &__contant-box{
+    @extend %rubik-400;
+    h3{
+      font-size: 36px;
+      color: #333;
+      margin: 30px 0;
+    }
+    p{
+      color: $title;
+      line-height: 30px;
+      margin: 30px 0;
+    }
+    blockquote{
+      margin: 40px 0;
+      padding: 25px 35px;
+      background-color: #edf1f4;
+      border-left: 6px solid $accent;
+      p{
+        margin: 0;
+      }
+      cite{
+        display: inline-block;
+        margin-top: 25px;
+        padding-left: 45px;
+        position: relative;
+        font-style: normal;
+        &::before{
+          position: absolute;
+          content: '';
+          width: 20px;
+          height: 4px;
+          background-color: $accent;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        a{
+          color: $title;
+        }
+      }
+    }
+    img{
+      width: 320px;
+      height: 210px;
+      object-fit: cover;
+    }
+    .left-img{
+      float: left;
+      margin-right: 30px;
+    }
+    .roght-img{
+      float: right;
+      margin-left: 30px;
+    }
+    h5{
+      font-size: 18px;
+      margin: 30px 0;
+    }
+  }
+  .comments__content-top{
+    display: flex;
+    justify-content: space-between;
+  }
+  .comments__content-date{
+    border: none;
   }
 }
 
@@ -1708,8 +1832,80 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    .icon{
+      width: 18px;
+      height: 18px;
+      fill: rgb(9, 64, 116);
+    }
   }
 }
+
+.autor-box{
+  display: flex;
+  margin: 65px 0;
+  border-top: 2px solid #ececec;
+  border-bottom: 2px solid #ececec;
+  padding: 24px 0;
+  &__img-box{
+    max-width: 76px;
+    min-height: 76px;
+    margin-right: 30px;
+  }
+  &__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+  }
+  &__name{
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  &__position{
+    color: #666;
+  }
+  &__tags{
+    margin-bottom: 15px;
+  }
+  &__links{
+    span{
+      display: inline-block;
+      width: 68px;
+    }
+  }
+  &__link-tags{
+    position: relative;
+    padding-left: 4px;
+    color: #999;
+    &::after{
+      content: ',';
+      position: absolute;
+    }
+    &:last-child::after{
+      display: none;
+    }
+  }
+  &__share{
+    display: flex;
+  }
+  &__link-share{
+    .icon{
+      width: 22px;
+      height: 16px;
+      margin-right: 15px;
+      fill: #a1a1a1;
+      vertical-align: middle;
+    }
+  }
+  &__info-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 
 
 @import 'media';
