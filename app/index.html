@@ -75,9 +75,12 @@
           </ul>
         </nav>
         <div class="user__nav">
-          <a class="user__nav-link user__nav-link--search" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#search"></use></svg>
-          </a>
+          <div class="user__nav-search header-search">
+            <input class="header-search__input"  type="text" name="search">
+            <a class="header-search__link user__nav-link user__nav-link--search" href="#">
+              <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#search"></use></svg>
+            </a>
+          </div>
           <a class="user__nav-link user__nav-link--heart" href="#">
             <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#heart"></use></svg>
             <span class="user__nav-count">0</span>
@@ -86,9 +89,31 @@
             <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#cart"></use></svg>
             <span class="user__nav-count">0</span>
           </a>
-          <a class="user__nav-link user__nav-link--menu" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#menu"></use></svg>
-          </a>
+          <div class="user__nav-block">
+            <a class="user__nav-link user__nav-link--menu" href="#">
+              <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#menu"></use></svg>
+            </a>
+            <ul class="user__nav-list">
+              <li class="user__nav-item">
+                <a href="#" class="user__nav-item--link">
+                  <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#input-name"></use></svg>
+                  Login
+                </a>
+              </li>
+              <li class="user__nav-item">
+                <a href="#" class="user__nav-item--link">
+                  <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#input-name"></use></svg>
+                  Login
+                </a>
+              </li>
+              <li class="user__nav-item">
+                <a href="#" class="user__nav-item--link">
+                  <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#input-name"></use></svg>
+                  Login
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

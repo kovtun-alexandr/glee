@@ -8,7 +8,12 @@ $(function () {
     $(this).addClass('production-tubs__top-item--active');
     $('.production-tubs__content-item').removeClass('production-tubs__content-item--active');
     $($(this).attr('href')).addClass('production-tubs__content-item--active');
-  })
+  });
+
+  $('.user__nav-link--menu').on('click', function(e){
+    e.preventDefault();
+    $('.user__nav-list').toggleClass('user__nav-list--active');
+  });
 
   $('.production__input').styler();
 
