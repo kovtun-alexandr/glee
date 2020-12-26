@@ -1,0 +1,79 @@
+.team{
+  padding-top: 60px;
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+  }
+  &__item:nth-child(1){
+    grid-row: span 2;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $title;
+    margin-bottom: 25px;
+  }
+  &__text{
+    @extend %rubik-400;
+    line-height: 30px;
+    color: $title;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  &__link{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $btn;
+    color: #fff;
+    padding: 14px 15px;
+    border-radius: 5px;
+    width: 170px;
+    .icon{
+      width: 23px;
+      height: 10px;
+      fill: #fff;
+    }
+  }
+  &__contant{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 30px 20px 30px 25px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    max-width: 325px;
+    margin-top: -50px;
+    position: relative;
+    .team__link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: #f6f6f6;
+      border-radius: 50%;
+      padding: 0;
+      margin: 0 4px;
+      .icon{
+        width: 18px;
+        height: 18px;
+        fill: #888;
+      }
+    }
+  }
+  &__name{
+    @extend %dmsans-700;
+    font-size: 22px;
+    color: $nav;
+    margin-bottom: 15px;
+  }
+  &__position{
+    @extend %rubik-400;
+    color: #565872;
+  }
+  &__link-box{
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="css/blog-details.min.css">
+</head>
+
+<body>
+
+  {% include "app/moduls/_header/_header.html" %}
+
+  <main class="main">
+
+    {% include "app/moduls/_top/_top.html" %}
+    <section class="blog-page">
+      <div class="container">
+        <div class="blog-page__inner">
+          <div class="blog-page__content">
+            <div class="blog-page__list">
+              <div class="blog-page__item">
+                <div class="blog-page__img-box">
+                  <img class="blog-page__image" src="images/blog/blog-1.jpg" alt="Blog image">
+                  <div class="insights__info">
+                    <p class="insights__info-date">
+                      28 JANUARY, 2020
+                    </p>
+                    <a class="insights__link-autor" href="#">
+                      <p class="insights__info-autor">
+                        BY ADMIN
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-page__contant-box">
+                  <h3>
+                    Fonsectetur adipisicing eiusmod
+                  </h3>
+                  <p>
+                    <strong>
+                      Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim venia Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    </strong>
+                  </p>
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit
+                    amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.
+                  </p>
+                  <blockquote>
+                    <p>
+                      Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                    <cite><a href="#">Wiusmod tempor</a></cite>
+                  </blockquote>
+                  <img class="left-img" src="images/blog/blog-3.jpg" alt="blog inage">
+                  <h5>
+                    Riusmod tempor incididunt
+                  </h5>
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  </p>
+                  <h5>
+                    Kajtsal jervcm eoaspckred
+                  </h5>
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  </p>
+                </div>
+                {% include "app/moduls/_blog-autor/_blog-autor.html" %}
+                <div class="blog-page__comments">
+                  <p class="comments-form__title">3 Comments</p>
+                  {% include "app/moduls/_comments/_comments.html" %}
+                  {% include "app/moduls/_comments/_comments.html" %}
+                  {% include "app/moduls/_comment-form/_comment-form.html" %}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-page__aside">
+            {% include "app/moduls/_blog-page/_blog-page__search/_blog-page__search.html" %}
+            {% include "app/moduls/_filter-category/_filter-category.html" %}
+            {% include "app/moduls/_filter-posts/_filter-posts.html" %}
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "app/moduls/_partners/_partners.html" %}
+  </main>
+
+  {% include "app/moduls/_footer/_footer.html" %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

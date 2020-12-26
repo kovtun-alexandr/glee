@@ -1,0 +1,37 @@
+.movies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+  &__link{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    .icon{
+      width: 23px;
+      height: 27px;
+      fill: #fff;
+      transform: translateX(2px);
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $accent;
+      animation: pulse 2s infinite;
+      z-index: -1;
+    }
+  }
+}

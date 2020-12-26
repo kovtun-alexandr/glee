@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendant lamp</title>
+  <link rel="stylesheet" href="css/product.min.css">
+</head>
+
+<body>
+
+  {% include "app/moduls/_header/_header.html" %}
+
+  <main class="main">
+    {% include "app/moduls/_top/_top.html" %}
+    <section class="product-page">
+      <div class="container">
+        <div class="production">
+          <div class="production__inner">
+            <div class="production__slide">
+              <div class="production__thumb">
+                <div class="production__thumb-item">
+                  <img class="production__thumb-img" src="images/product/product/1.jpg" alt="Product image">
+                </div>
+                <div class="production__thumb-item">
+                  <img class="production__thumb-img" src="images/creatives.jpg" alt="Product image">
+                </div>
+                <div class="production__thumb-item">
+                  <img class="production__thumb-img" src="images/product/producr-6.jpg" alt="Product image">
+                </div>
+              </div>
+              <div class="production__main">
+                <div class="production__main-item">
+                  <img class="production__main-img" src="images/product/product/1.jpg" alt="Product image">
+                </div>
+                <div class="production__main-item">
+                  <img class="production__main-img" src="images/creatives.jpg" alt="Product image">
+                </div>
+                <div class="production__main-item">
+                  <img class="production__main-img" src="images/product/producr-6.jpg" alt="Product image">
+                </div>
+              </div>
+            </div>
+            <div class="production__content">
+              <h2 class="production__title">Pendant lamp</h2>
+              <div class="production__star star" data-rateyo-rating="4"></div>
+              <div class="production__price">
+                <div class="production__price-new">23$</div>
+                <div class="production__price-old">25$</div>
+              </div>
+              <p class="production__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+              <form class="production__form" action="#">
+                <input class="production__input" type="number" value="1">
+                <buttom class="production__btn">Add to cart</buttom>
+              </form>
+              <div class="production__info">
+                <ul class="production__info-list">
+                  <li class="production__info-item">
+                    <div class="production__info-title">
+                      SKU:
+                    </div>
+                    <div class="production__info-content">
+                      014
+                    </div>
+                  </li>
+                  <li class="production__info-item">
+                    <div class="production__info-title">
+                      Category:
+                    </div>
+                    <div class="production__info-content">
+                      <a class="production__info-link" href="#">Lights</a>
+                    </div>
+                  </li>
+                  <li class="production__info-item">
+                    <div class="production__info-title">
+                      Tag:
+                    </div>
+                    <div class="production__info-content">
+                      <a class="production__info-link" href="#">Decorative</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="production-tubs">
+          <div class="production-tubs__top">
+            <a class="production-tubs__top-item production-tubs__top-item--active" href="#tab-1">
+              Description
+            </a>
+            <a class="production-tubs__top-item" href="#tab-2">
+              Additional information
+            </a>
+            <a class="production-tubs__top-item" href="#tab-3">
+              Reviews
+              <span>(3)</span>
+            </a>
+          </div>
+          <div class="production-tubs__content">
+            <div id="tab-1" class="production-tubs__content-item production-tubs__content-item--active">
+              <div>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div id="tab-2" class="production-tubs__content-item">Contant 2</div>
+            <div id="tab-3" class="production-tubs__content-item">
+              {% include "app/moduls/_comments/_comments.html" %}
+              {% include "app/moduls/_comments/_comments.html" %}
+              {% include "app/moduls/_comment-form/_comment-form.html" %}
+{#               
+              <form class="comments-form" action="#">
+                <p class="comments-form__title">Add your review</p>
+                
+                <div class="comments-form__inputbox">
+                  <span class="comments-form__input-after--name">
+                    <input class="comments-form__input" type="text" placeholder="Name">
+                  </span>
+                  <span class="comments-form__input-after--email">
+                    <input class="comments-form__input" type="text" placeholder="E-mail">
+                  </span>
+                </div>
+                <span class="comments-form__textarea-after">
+                  <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
+                </span>
+                <button class="comments-form__btn" type="submit">Post Comment</button>
+              </form> #}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "app/moduls/_product-related/_product-related.html" %}
+    {% include "app/moduls/_insights/_insights.html" %}
+    {% include "app/moduls/_partners/_partners.html" %}
+  </main>
+
+  {% include "app/moduls/_footer/_footer.html" %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

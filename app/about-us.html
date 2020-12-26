@@ -5,460 +5,508 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/about-us.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="top-container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__image" src="images/logo.png" alt="logo">
+  <div class="top-container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__image" src="images/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/index.html">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/about-us.html">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <span class="menu__list-link">Pages</span>
+            <span>+</span>
+            <ul class="menu__sub-list">
+              <li class="menu__sub-item">
+                <a class="menu__sub-link" href="/catalog.html">
+                  Product Grid
+                </a>
+              </li>
+              <li class="menu__sub-item">
+                <a class="menu__sub-link" href="/catalog-list.html">
+                  Product List
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/blog.html">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user__nav">
+        <div class="user__nav-search header-search">
+          <input class="header-search__input"  type="text" name="search">
+          <a class="header-search__link user__nav-link user__nav-link--search" href="#">
+            <svg class="icon">
+              <use xlink:href="images/svg/sprite/sprite.svg#search"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="user__nav-link user__nav-link--heart" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#heart"></use>
+          </svg>
+          <span class="user__nav-count">0</span>
         </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home</a>
-              <span>+</span>
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 1
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 2
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages</a>
-              <span>+</span>
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 1
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 2
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user__nav">
-          <a class="user__nav-link user__nav-link--search" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#search"></use></svg>
-          </a>
-          <a class="user__nav-link user__nav-link--heart" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#heart"></use></svg>
-            <span class="user__nav-count">0</span>
-          </a>
-          <a class="user__nav-link user__nav-link--cart" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#cart"></use></svg>
-            <span class="user__nav-count">0</span>
-          </a>
+        <a class="user__nav-link user__nav-link--cart" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#cart"></use>
+          </svg>
+          <span class="user__nav-count">0</span>
+        </a>
+        <div class="user__nav-block">
           <a class="user__nav-link user__nav-link--menu" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#menu"></use></svg>
+            <svg class="icon">
+              <use xlink:href="images/svg/sprite/sprite.svg#menu"></use>
+            </svg>
           </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-
-    <section class="top">
-      <div class="container">
-        <h2 class="top__title">About Us</h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Home
-              </a>
+          <ul class="user__nav-list">
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                About Us
-              </a>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
+            </li>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="creatives">
-      <div class="container">
-        <div class="creatives__inner">
-          <div class="creatives__img-box" style="background-image: url('images/creatives.jpg');"></div>
-          <div class="creatives__contant">
-            <div class="creatives__experience">
-              <div class="creatives__experience-time">
-                12
-              </div>
-              <div class="creatives__experience-descr">
-                <div class="creatives__experience-text">
-                  Years
-                </div>
-                <div class="creatives__experience-text">
-                  Experience
-                </div>
-                <div class="creatives__experience-text">
-                  Working
-                </div>
-              </div>
-            </div>
-            <h3 class="creatives__title">
-              Mission of our creative house
-            </h3>
-            <p class="creatives__text">
-              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            </p>
-            <div class="creatives__list">
-              <div class="creatives__item" style="background-image: url('images/svg/letter.svg');">
-                <div class="creatives__count">520+</div>
-                <div class="creatives__name">Projects</div>
-              </div>
-              <div class="creatives__item" style="background-image: url('images/svg/speaker.svg');">
-                <div class="creatives__count">$4M</div>
-                <div class="creatives__name">Revenue</div>
-              </div>
-              <div class="creatives__item" style="background-image: url('images/svg/medal.svg');">
-                <div class="creatives__count">250</div>
-                <div class="creatives__name">Awards</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="our-advantages">
-      <div class="container">
-        <div class="our-advantages__list">
-          <div class="our-advantages__item" style="background-image: url('../images/svg/clients.svg');">
-            <div class="our-advantages__count">99%</div>
-            <div class="our-advantages__name">Satisﬁed Clients Rate</div>
-          </div>
-          <div class="our-advantages__item" style="background-image: url('../images/svg/delivery-2.svg');">
-            <div class="our-advantages__count">5020+</div>
-            <div class="our-advantages__name">Products Delivered</div>
-          </div>
-          <div class="our-advantages__item" style="background-image: url('../images/svg/time.svg');">
-            <div class="our-advantages__count">23hr</div>
-            <div class="our-advantages__name">Daily Working Time</div>
-          </div>
-          <div class="our-advantages__item" style="background-image: url('../images/svg/brends.svg');">
-            <div class="our-advantages__count">140+</div>
-            <div class="our-advantages__name">Brands in Store</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="team">
-      <div class="container">
-        <div class="team__list">
-          <div class="team__item">
-            <h3 class="team__title">
-              Our Team
-            </h3>
-            <p class="team__text">
-              Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-            <a class="team__link" href="#">
-              Join With US
-              <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#arrow-right"></use></svg>
-            </a>
-          </div>
-          <div class="team__item">
-            <div class="tean__img-box">
-              <img class="team__image" src="images/teams/1.jpg" alt="Team photo">
-            </div>
-            <div class="team__contant">
-              <div class="team__info">
-                <div class="team__name">Eliza Elliot</div>
-                <div class="team__position">Commodo tempor </div>
-              </div>
-              <div class="team__link-box">
-                <a class="team__link" href="#"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#insta"></use></svg></a>
-                <a class="team__link" href="#"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#gplus"></use></svg></a>
-              </div>
-            </div>
-          </div>
-          <div class="team__item">
-            <div class="tean__img-box">
-              <img class="team__image" src="images/teams/2.jpg" alt="Team photo">
-            </div>
-            <div class="team__contant">
-              <div class="team__info">
-                <div class="team__name">Roscoe A.</div>
-                <div class="team__position">Commodo tempor </div>
-              </div>
-              <div class="team__link-box">
-                <a class="team__link" href="#"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#insta"></use></svg></a>
-                <a class="team__link" href="#"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#gplus"></use></svg></a>
-              </div>
-            </div>
-          </div>
-          <div class="team__item">
-            <div class="tean__img-box">
-              <img class="team__image" src="images/teams/3.jpg" alt="Team photo">
-            </div>
-            <div class="team__contant">
-              <div class="team__info">
-                <div class="team__name">Ruby M.</div>
-                <div class="team__position">Commodo tempor </div>
-              </div>
-              <div class="team__link-box">
-                <a class="team__link" href="#"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#insta"></use></svg></a>
-                <a class="team__link" href="#"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#gplus"></use></svg></a>
-              </div>
-            </div>
-          </div>
-          <div class="team__item">
-            <div class="tean__img-box">
-              <img class="team__image" src="images/teams/4.jpg" alt="Team photo">
-            </div>
-            <div class="team__contant">
-              <div class="team__info">
-                <div class="team__name">Marie F. Bloss</div>
-                <div class="team__position">Commodo tempor </div>
-              </div>
-              <div class="team__link-box">
-                <a class="team__link" href="#">
-                  <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#insta"></use></svg>
-                </a>
-                <a class="team__link" href="#">
-                  <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#gplus"></use></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="insights">
-        <div class="container">
-          <div class="insights__title-blok">
-            <h2 class="insights__title title">
-              Our Insights & Articles
-            </h2>
-            <a class="insights__link" href="#">
-              View All
-              <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#chevron-right"></use></svg>
-            </a>
-          </div>
-          <div class="insights__inner">
-            <div class="insights__item insights__item--new">
-              <a class="insights__link-img" href="#">
-                <img class="insights__images" src="images/insights/1.jpg" alt="Insights photo">
-              </a>
-              <div class="insights__content">
-                <a class="insights__link-title" href="#">
-                  <h5 class="insights__content-title">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </h5>
-                </a>
-              </div>
-              <div class="insights__info">
-                <p class="insights__info-date">
-                  28 JANUARY, 2020
-                </p>
-                <a class="insights__link-autor" href="#">
-                  <p class="insights__info-autor">
-                    BY ADMIN
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="insights__item insights__item--new">
-              <a class="insights__link-img" href="#">
-                <img class="insights__images" src="images/insights/2.jpg" alt="Insights photo">
-              </a>
-              <div class="insights__content">
-                <a class="insights__link-title" href="#">
-                  <h5 class="insights__content-title">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </h5>
-                </a>
-              </div>
-              <div class="insights__info">
-                <p class="insights__info-date">
-                  28 JANUARY, 2020
-                </p>
-                <a class="insights__link-autor" href="#">
-                  <p class="insights__info-autor">
-                    BY ADMIN
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="insights__item insights__item--new">
-              <a class="insights__link-img" href="#">
-                <img class="insights__images" src="images/insights/3.jpg" alt="Insights photo">
-              </a>
-              <div class="insights__content">
-                <a class="insights__link-title" href="#">
-                  <h5 class="insights__content-title">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </h5>
-                </a>
-              </div>
-              <div class="insights__info">
-                <p class="insights__info-date">
-                  28 JANUARY, 2020
-                </p>
-                <a class="insights__link-autor" href="#">
-                  <p class="insights__info-autor">
-                    BY ADMIN
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </main>
-
-  <div class="partners">
-    <div class="container">
-      <div class="partners__items">
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/1.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/2.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/3.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/4.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/5.png" alt="partners logo">
         </div>
       </div>
     </div>
   </div>
+</header>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-top__item footer-top__item--address">
-          <a class="logo footer-top__logo" href="#">
-            <img class="logo__image" src="images/logo.png" alt="logo">
+  <main class="main">
+
+    <section class="top">
+  <div class="container">
+    <h2 class="top__title">
+      Contact
+    </h2>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="/index.html">
+              Home
           </a>
-          <div class="footer-top__contacts footer-top__contacts--address">
-            <span class="footer-top__contacts-text">ADDRESS:</span>
-            <a class="footer-top__contacts-link" href="#">4772 Wines Lane Houston, TX 77032</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link">
+            Contact
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="creatives">
+  <div class="container">
+    <div class="creatives__inner">
+      <div class="creatives__img-box" style="background-image: url('images/creatives.jpg');"></div>
+      <div class="creatives__contant">
+        <div class="creatives__experience">
+          <div class="creatives__experience-time">
+            12
           </div>
-          <div class="footer-top__contacts footer-top__contacts--phone">
-            <span class="footer-top__contacts-text">Telephone:</span>
-            <a class="footer-top__contacts-link" href="tel:+8323475843">+832-347-5843</a>
-          </div>
-          <div class="footer-top__contacts footer-top__contacts--email">
-            <span class="footer-top__contacts-text">Email:</span>
-            <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
+          <div class="creatives__experience-descr">
+            <div class="creatives__experience-text">
+              Years
+            </div>
+            <div class="creatives__experience-text">
+              Experience
+            </div>
+            <div class="creatives__experience-text">
+              Working
+            </div>
           </div>
         </div>
-        <div class="footer-top__item footer-top__item--nav">
-          <h6 class="footer-top__title">Services</h6>
-          <ul class="footer-top__nav-list">
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">About us</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Return Policy</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Our Blog</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Terms & Condition</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__item--nav">
-          <h6 class="footer-top__title">Account</h6>
-          <ul class="footer-top__nav-list">
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Your Account</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Checkout</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Login</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Register</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__item--descr">
-          <h6 class="footer-top__title">newsletter</h6>
-          <p class="footer-top__descr">
-            Subscribe by our newsletter and get update protidin.
-          </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="text" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
-          </form>
+        <h3 class="creatives__title">
+          Mission of our creative house
+        </h3>
+        <p class="creatives__text">
+          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        </p>
+        <div class="creatives__list">
+          <div class="creatives__item" style="background-image: url('images/svg/letter.svg');">
+            <div class="creatives__count">520+</div>
+            <div class="creatives__name">Projects</div>
+          </div>
+          <div class="creatives__item" style="background-image: url('images/svg/speaker.svg');">
+            <div class="creatives__count">$4M</div>
+            <div class="creatives__name">Revenue</div>
+          </div>
+          <div class="creatives__item" style="background-image: url('images/svg/medal.svg');">
+            <div class="creatives__count">250</div>
+            <div class="creatives__name">Awards</div>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-bottom__copy">
-          ©2020 CopyRight Example. All rights reserved.
+    </div>
+  </div>
+</section>
+    <div class="our-advantages">
+  <div class="container">
+    <div class="our-advantages__list">
+      <div class="our-advantages__item" style="background-image: url('../images/svg/clients.svg');">
+        <div class="our-advantages__count">99%</div>
+        <div class="our-advantages__name">Satisﬁed Clients Rate</div>
+      </div>
+      <div class="our-advantages__item" style="background-image: url('../images/svg/delivery-2.svg');">
+        <div class="our-advantages__count">5020+</div>
+        <div class="our-advantages__name">Products Delivered</div>
+      </div>
+      <div class="our-advantages__item" style="background-image: url('../images/svg/time.svg');">
+        <div class="our-advantages__count">23hr</div>
+        <div class="our-advantages__name">Daily Working Time</div>
+      </div>
+      <div class="our-advantages__item" style="background-image: url('../images/svg/brends.svg');">
+        <div class="our-advantages__count">140+</div>
+        <div class="our-advantages__name">Brands in Store</div>
+      </div>
+    </div>
+  </div>
+</div>
+    <section class="team">
+  <div class="container">
+    <div class="team__list">
+      <div class="team__item">
+        <h3 class="team__title">
+          Our Team
+        </h3>
+        <p class="team__text">
+          Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
-        <ul class="footer-bottom__nav-list">
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Home</a>
+        <a class="team__link" href="#">
+          Join With US
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="team__item">
+        <div class="tean__img-box">
+          <img class="team__image" src="images/teams/1.jpg" alt="Team photo">
+        </div>
+        <div class="team__contant">
+          <div class="team__info">
+            <div class="team__name">Eliza Elliot</div>
+            <div class="team__position">Commodo tempor </div>
+          </div>
+          <div class="team__link-box">
+            <a class="team__link" href="#">
+              <svg class="icon">
+                <use xlink:href="images/svg/sprite/sprite.svg#insta"></use>
+              </svg>
+            </a>
+            <a class="team__link" href="#">
+              <svg class="icon">
+                <use xlink:href="images/svg/sprite/sprite.svg#gplus"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="team__item">
+        <div class="tean__img-box">
+          <img class="team__image" src="images/teams/2.jpg" alt="Team photo">
+        </div>
+        <div class="team__contant">
+          <div class="team__info">
+            <div class="team__name">Roscoe A.</div>
+            <div class="team__position">Commodo tempor </div>
+          </div>
+          <div class="team__link-box">
+            <a class="team__link" href="#">
+              <svg class="icon">
+                <use xlink:href="images/svg/sprite/sprite.svg#insta"></use>
+              </svg>
+            </a>
+            <a class="team__link" href="#">
+              <svg class="icon">
+                <use xlink:href="images/svg/sprite/sprite.svg#gplus"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="team__item">
+        <div class="tean__img-box">
+          <img class="team__image" src="images/teams/3.jpg" alt="Team photo">
+        </div>
+        <div class="team__contant">
+          <div class="team__info">
+            <div class="team__name">Ruby M.</div>
+            <div class="team__position">Commodo tempor </div>
+          </div>
+          <div class="team__link-box">
+            <a class="team__link" href="#">
+              <svg class="icon">
+                <use xlink:href="images/svg/sprite/sprite.svg#insta"></use>
+              </svg>
+            </a>
+            <a class="team__link" href="#">
+              <svg class="icon">
+                <use xlink:href="images/svg/sprite/sprite.svg#gplus"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="team__item">
+        <div class="tean__img-box">
+          <img class="team__image" src="images/teams/4.jpg" alt="Team photo">
+        </div>
+        <div class="team__contant">
+          <div class="team__info">
+            <div class="team__name">Marie F. Bloss</div>
+            <div class="team__position">Commodo tempor </div>
+          </div>
+          <div class="team__link-box">
+            <a class="team__link" href="#">
+              <svg class="icon">
+                <use xlink:href="images/svg/sprite/sprite.svg#insta"></use>
+              </svg>
+            </a>
+            <a class="team__link" href="#">
+              <svg class="icon">
+                <use xlink:href="images/svg/sprite/sprite.svg#gplus"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="insights">
+  <div class="container">
+    <div class="insights__title-blok">
+      <h2 class="insights__title title">
+            Our Insights & Articles
+          </h2>
+      <a class="insights__link" href="#">
+            View All
+            <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#chevron-right"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="insights__inner">
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/1.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
+          </a>
+        </div>
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/2.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
+          </a>
+        </div>
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/3.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
+          </a>
+        </div>
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <div class="partners">
+  <div class="container">
+    <div class="partners__items">
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/1.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/2.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/3.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/4.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/5.png" alt="partners logo">
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-top__item footer-top__item--address">
+        <a class="logo footer-top__logo" href="#">
+          <img class="logo__image" src="images/logo.png" alt="logo">
+        </a>
+        <div class="footer-top__contacts footer-top__contacts--address">
+          <span class="footer-top__contacts-text">ADDRESS:</span>
+          <a class="footer-top__contacts-link" href="#">4772 Wines Lane Houston, TX 77032</a>
+        </div>
+        <div class="footer-top__contacts footer-top__contacts--phone">
+          <span class="footer-top__contacts-text">Telephone:</span>
+          <a class="footer-top__contacts-link" href="tel:+8323475843">+832-347-5843</a>
+        </div>
+        <div class="footer-top__contacts footer-top__contacts--email">
+          <span class="footer-top__contacts-text">Email:</span>
+          <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
+        </div>
+      </div>
+      <div class="footer-top__item footer-top__item--nav">
+        <h6 class="footer-top__title">Services</h6>
+        <ul class="footer-top__nav-list">
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">About us</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">About</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Return Policy</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Blog</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Our Blog</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Contact</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Terms & Condition</a>
           </li>
         </ul>
       </div>
+      <div class="footer-top__item footer-top__item--nav">
+        <h6 class="footer-top__title">Account</h6>
+        <ul class="footer-top__nav-list">
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Your Account</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Checkout</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Login</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__item footer-top__item--descr">
+        <h6 class="footer-top__title">newsletter</h6>
+        <p class="footer-top__descr">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+        <form class="footer-top__form" action="#">
+          <input class="footer-top__form-input" type="text" placeholder="Email address" required>
+          <button class="footer-top__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <p class="footer-bottom__copy">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+      <ul class="footer-bottom__nav-list">
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Home</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">About</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Blog</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
   <script src="js/main.min.js"></script>
 </body>

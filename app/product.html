@@ -5,117 +5,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pendant lamp</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/product.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="top-container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__image" src="images/logo.png" alt="logo">
+  <div class="top-container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__image" src="images/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/index.html">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/about-us.html">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <span class="menu__list-link">Pages</span>
+            <span>+</span>
+            <ul class="menu__sub-list">
+              <li class="menu__sub-item">
+                <a class="menu__sub-link" href="/catalog.html">
+                  Product Grid
+                </a>
+              </li>
+              <li class="menu__sub-item">
+                <a class="menu__sub-link" href="/catalog-list.html">
+                  Product List
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/blog.html">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user__nav">
+        <div class="user__nav-search header-search">
+          <input class="header-search__input"  type="text" name="search">
+          <a class="header-search__link user__nav-link user__nav-link--search" href="#">
+            <svg class="icon">
+              <use xlink:href="images/svg/sprite/sprite.svg#search"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="user__nav-link user__nav-link--heart" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#heart"></use>
+          </svg>
+          <span class="user__nav-count">0</span>
         </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home</a>
-              <span>+</span>
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 1
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 2
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 3
-                  </a>
-                </li>
-              </ul>
+        <a class="user__nav-link user__nav-link--cart" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#cart"></use>
+          </svg>
+          <span class="user__nav-count">0</span>
+        </a>
+        <div class="user__nav-block">
+          <a class="user__nav-link user__nav-link--menu" href="#">
+            <svg class="icon">
+              <use xlink:href="images/svg/sprite/sprite.svg#menu"></use>
+            </svg>
+          </a>
+          <ul class="user__nav-list">
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages</a>
-              <span>+</span>
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 1
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 2
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
           </ul>
-        </nav>
-        <div class="user__nav">
-          <a class="user__nav-link user__nav-link--search" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#search"></use></svg>
-          </a>
-          <a class="user__nav-link user__nav-link--heart" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#heart"></use></svg>
-            <span class="user__nav-count">0</span>
-          </a>
-          <a class="user__nav-link user__nav-link--cart" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#cart"></use></svg>
-            <span class="user__nav-count">0</span>
-          </a>
-          <a class="user__nav-link user__nav-link--menu" href="#">
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#menu"></use></svg>
-          </a>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
   <main class="main">
-
     <section class="top">
-      <div class="container">
-        <h2 class="top__title">Pendant lamp</h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Home
-              </a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Pendant lamp
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
+  <div class="container">
+    <h2 class="top__title">
+      Contact
+    </h2>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="/index.html">
+              Home
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link">
+            Contact
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
     <section class="product-page">
       <div class="container">
         <div class="production">
@@ -210,509 +226,617 @@
             <div id="tab-2" class="production-tubs__content-item">Contant 2</div>
             <div id="tab-3" class="production-tubs__content-item">
               <div class="comments">
-                <img class="comments__img" src="images/avatar/1.jpg" alt="Avatar">
-                <div class="comments__content">
-                  <div class="comments__content-top">
-                      <div class="comments__content-name">Michle Jhon</div>
-                      <div class="comments__content-date">Add 11 Oct 2020</div>
-                    <div class="comments__content-star star" data-rateyo-rating="4"></div>
-                  </div>
-                  <p class="comments__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel facilisis. 
-                  </p>
-                  <a class="comments__content-reply" href="#">
-                    Reply
-                    <svg class="icon">
-                      <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+  <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
+  <div class="comments__content">
+    <div class="comments__content-top">
+      <div class="comments__content-name">Michle Jhon</div>
+      <div class="comments__content-date">Add 11 Oct 2020</div>
+      <div class="comments__content-star star" data-rateyo-rating="4"></div>
+    </div>
+    <p class="comments__content-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
+      maeenas accumsan lacus vel facilisis.
+    </p>
+    <a class="comments__content-reply" href="#">
+      Reply
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
+      </svg>
+    </a>
+    <div class="comments">
+  <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
+  <div class="comments__content">
+    <div class="comments__content-top">
+      <div class="comments__content-name">Michle Jhon</div>
+      <div class="comments__content-date">Add 11 Oct 2020</div>
+      <div class="comments__content-star star" data-rateyo-rating="5"></div>
+    </div>
+    <p class="comments__content-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
+      maeenas accumsan lacus vel facilisis.
+    </p>
+    <a class="comments__content-reply" href="#">
+      Reply
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+  </div>
+</div>
               <div class="comments">
-                <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
-                <div class="comments__content">
-                  <div class="comments__content-top">
-                      <div class="comments__content-name">Michle Jhon</div>
-                      <div class="comments__content-date">Add 11 Oct 2020</div>
-                    <div class="comments__content-star star" data-rateyo-rating="4"></div>
-                  </div>
-                  <p class="comments__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel facilisis. 
-                  </p>
-                  <a class="comments__content-reply" href="#">
-                    Reply
-                    <svg class="icon">
-                      <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="comments">
-                <img class="comments__img" src="images/avatar/3.jpg" alt="Avatar">
-                <div class="comments__content">
-                  <div class="comments__content-top">
-                      <div class="comments__content-name">Michle Jhon</div>
-                      <div class="comments__content-date">Add 11 Oct 2020</div>
-                    <div class="comments__content-star star" data-rateyo-rating="4"></div>
-                  </div>
-                  <p class="comments__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel facilisis. 
-                  </p>
-                  <a class="comments__content-reply" href="#">
-                    Reply
-                    <svg class="icon">
-                      <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+  <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
+  <div class="comments__content">
+    <div class="comments__content-top">
+      <div class="comments__content-name">Michle Jhon</div>
+      <div class="comments__content-date">Add 11 Oct 2020</div>
+      <div class="comments__content-star star" data-rateyo-rating="4"></div>
+    </div>
+    <p class="comments__content-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
+      maeenas accumsan lacus vel facilisis.
+    </p>
+    <a class="comments__content-reply" href="#">
+      Reply
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
+      </svg>
+    </a>
+    <div class="comments">
+  <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
+  <div class="comments__content">
+    <div class="comments__content-top">
+      <div class="comments__content-name">Michle Jhon</div>
+      <div class="comments__content-date">Add 11 Oct 2020</div>
+      <div class="comments__content-star star" data-rateyo-rating="5"></div>
+    </div>
+    <p class="comments__content-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
+      maeenas accumsan lacus vel facilisis.
+    </p>
+    <a class="comments__content-reply" href="#">
+      Reply
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+  </div>
+</div>
               <form class="comments-form" action="#">
-                <p class="comments-form__title">Add your review</p>
-                <div class="comments-form__rating star-form">
-                  <span class="star-form__tilte">Your Rating</span>
-                  <label class="star-form__label">
-                    <input class="star-form__input" type="radio" name="stap">
-                    <span class="star-form__radio">
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                    </span>
-                  </label>
-                  <label class="star-form__label">
-                    <input class="star-form__input" type="radio" name="stap">
-                    <span class="star-form__radio">
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                    </span>
-                  </label>
-                  <label class="star-form__label">
-                    <input class="star-form__input" type="radio" name="stap">
-                    <span class="star-form__radio">
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                    </span>
-                  </label>
-                  <label class="star-form__label">
-                    <input class="star-form__input" type="radio" name="stap">
-                    <span class="star-form__radio">
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                    </span>
-                  </label>
-                  <label class="star-form__label">
-                    <input class="star-form__input" type="radio" name="stap" checked>
-                    <span class="star-form__radio">
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                      <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#star"></use></svg>
-                    </span>
-                  </label>
-                </div>
-                <div class="comments-form__inputbox">
-                  <span class="comments-form__input-after--name">
-                    <input class="comments-form__input" type="text" placeholder="Name">
-                  </span>
-                  <span class="comments-form__input-after--email">
-                    <input class="comments-form__input" type="text" placeholder="E-mail">
-                  </span>
-                </div>
-                <span class="comments-form__textarea-after">
-                  <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
-                </span>
-                <button class="comments-form__btn" type="submit">Post Comment</button>
-              </form>
+  <p class="comments-form__title">Leave A Comment</p>
+  <div class="comments-form__rating star-form">
+    <span class="star-form__tilte">Your Rating</span>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap">
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap">
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap">
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap">
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap" checked>
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+  </div>
+  <div class="comments-form__inputbox">
+    <span class="comments-form__input-after--name">
+      <input class="comments-form__input" type="text" placeholder="Name">
+    </span>
+    <span class="comments-form__input-after--email">
+      <input class="comments-form__input" type="text" placeholder="E-mail">
+    </span>
+  </div>
+  <span class="comments-form__textarea-after">
+    <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
+  </span>
+  <button class="comments-form__btn" type="submit">Post Comment</button>
+</form>
+
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="product-related">
-      <div class="container">
-        <div class="product-related__inner">
-          <h2 class="product-related__title">Related products</h2>
-          <div class="product-related__slide">
-            <div class="products__item">
-              <div class="products__img-box">
-                <img class="products__image" src="images/product/producr-1.jpg" alt="Product image">
-                <div class="products__link-box">
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-search"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-              <div class="products__content">
-                <div class="products__title">
-                  Wooden radio
-                </div>
-                <div class="star" data-rateyo-rating="4"></div>
-                <div class="products__price">
-                  <div class="products__price-new">$29.00</div>
-                </div>
-                <p class="products__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <div class="products__link-block">
-                  <a class="products__link products__link--cart" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link products__link--wishlist" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <div class="products__img-box">
-                <img class="products__image" src="images/product/producr-2.jpg" alt="Product image">
-                <div class="products__link-box">
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-search"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-              <div class="products__content">
-                <div class="products__title">
-                  Wooden chair
-                </div>
-                <div class="star" data-rateyo-rating="4.3"></div>
-                <div class="products__price">
-                  <div class="products__price-new">$29.00</div>
-                </div>
-                <p class="products__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <div class="products__link-block">
-                  <a class="products__link products__link--cart" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link products__link--wishlist" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <div class="products__img-box">
-                <img class="products__image" src="images/product/producr-3.jpg" alt="Product image">
-                <div class="products__link-box">
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-search"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-              <div class="products__content">
-                <div class="products__title">
-                  White chair
-                </div>
-                <div class="star" data-rateyo-rating="3.8"></div>
-                <div class="products__price">
-                  <div class="products__price-new">$29.00</div>
-                </div>
-                <p class="products__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <div class="products__link-block">
-                  <a class="products__link products__link--cart" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link products__link--wishlist" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <div class="products__img-box">
-                <img class="products__image" src="images/product/producr-4.jpg" alt="Product image">
-                <div class="products__link-box">
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-search"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-              <div class="products__content">
-                <div class="products__title">
-                  Retro table
-                </div>
-                <div class="star" data-rateyo-rating="5"></div>
-                <div class="products__price">
-                  <div class="products__price-new">$29.00</div>
-                </div>
-                <p class="products__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <div class="products__link-block">
-                  <a class="products__link products__link--cart" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link products__link--wishlist" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <div class="products__img-box">
-                <img class="products__image" src="images/product/producr-5.jpg" alt="Product image">
-                <div class="products__link-box">
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-search"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-              <div class="products__content">
-                <div class="products__title">
-                  Wooden chair
-                </div>
-                <div class="star" data-rateyo-rating="4.7"></div>
-                <div class="products__price">
-                  <div class="products__price-new">$29.00</div>
-                </div>
-                <p class="products__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <div class="products__link-block">
-                  <a class="products__link products__link--cart" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use></svg>
-                  </a>
-                  <a class="products__link products__link--wishlist" href="#">
-                    <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="container">
+    <div class="product-related__inner">
+      <h2 class="product-related__title">Related products</h2>
+      <div class="product-related__slide">
+        <div class="products__item">
+  <div class="products__img-box">
+    <img class="products__image" src="images/product/producr-1.jpg" alt="Product image">
+    <div class="products__link-box">
+      <a class="products__link" href="/product.html">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-search"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="products__content">
+    <div class="products__title">
+      Wooden radio
+    </div>
+    <div class="star" data-rateyo-rating="4"></div>
+    <div class="products__price">
+      <div class="products__price-new">$29.00</div>
+    </div>
+    <p class="products__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </p>
+    <div class="products__link-block">
+      <a class="products__link products__link--cart" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link products__link--wishlist" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+        <div class="products__item">
+  <div class="products__img-box">
+    <img class="products__image" src="images/product/producr-1.jpg" alt="Product image">
+    <div class="products__link-box">
+      <a class="products__link" href="/product.html">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-search"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="products__content">
+    <div class="products__title">
+      Wooden radio
+    </div>
+    <div class="star" data-rateyo-rating="4"></div>
+    <div class="products__price">
+      <div class="products__price-new">$29.00</div>
+    </div>
+    <p class="products__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </p>
+    <div class="products__link-block">
+      <a class="products__link products__link--cart" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link products__link--wishlist" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+        <div class="products__item">
+  <div class="products__img-box">
+    <img class="products__image" src="images/product/producr-1.jpg" alt="Product image">
+    <div class="products__link-box">
+      <a class="products__link" href="/product.html">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-search"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="products__content">
+    <div class="products__title">
+      Wooden radio
+    </div>
+    <div class="star" data-rateyo-rating="4"></div>
+    <div class="products__price">
+      <div class="products__price-new">$29.00</div>
+    </div>
+    <p class="products__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </p>
+    <div class="products__link-block">
+      <a class="products__link products__link--cart" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link products__link--wishlist" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+        <div class="products__item">
+  <div class="products__img-box">
+    <img class="products__image" src="images/product/producr-1.jpg" alt="Product image">
+    <div class="products__link-box">
+      <a class="products__link" href="/product.html">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-search"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="products__content">
+    <div class="products__title">
+      Wooden radio
+    </div>
+    <div class="star" data-rateyo-rating="4"></div>
+    <div class="products__price">
+      <div class="products__price-new">$29.00</div>
+    </div>
+    <p class="products__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </p>
+    <div class="products__link-block">
+      <a class="products__link products__link--cart" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link products__link--wishlist" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+        <div class="products__item">
+  <div class="products__img-box">
+    <img class="products__image" src="images/product/producr-1.jpg" alt="Product image">
+    <div class="products__link-box">
+      <a class="products__link" href="/product.html">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-search"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="products__content">
+    <div class="products__title">
+      Wooden radio
+    </div>
+    <div class="star" data-rateyo-rating="4"></div>
+    <div class="products__price">
+      <div class="products__price-new">$29.00</div>
+    </div>
+    <p class="products__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </p>
+    <div class="products__link-block">
+      <a class="products__link products__link--cart" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-cart"></use>
+        </svg>
+      </a>
+      <a class="products__link products__link--wishlist" href="#">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#product-heart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
       </div>
-    </section>
-
+    </div>
+  </div>
+</section>
     <section class="insights">
-      <div class="container">
-        <div class="insights__title-blok">
-          <h2 class="insights__title title">
+  <div class="container">
+    <div class="insights__title-blok">
+      <h2 class="insights__title title">
             Our Insights & Articles
           </h2>
-          <a class="insights__link" href="#">
+      <a class="insights__link" href="#">
             View All
-            <svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#chevron-right"></use></svg>
+            <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#chevron-right"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="insights__inner">
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/1.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
           </a>
         </div>
-        <div class="insights__inner">
-          <div class="insights__item insights__item--new">
-            <a class="insights__link-img" href="#">
-              <img class="insights__images" src="images/insights/1.jpg" alt="Insights photo">
-            </a>
-            <div class="insights__content">
-              <a class="insights__link-title" href="#">
-                <h5 class="insights__content-title">
-                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </h5>
-              </a>
-            </div>
-            <div class="insights__info">
-              <p class="insights__info-date">
-                28 JANUARY, 2020
-              </p>
-              <a class="insights__link-autor" href="#">
-                <p class="insights__info-autor">
-                  BY ADMIN
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="insights__item insights__item--new">
-            <a class="insights__link-img" href="#">
-              <img class="insights__images" src="images/insights/2.jpg" alt="Insights photo">
-            </a>
-            <div class="insights__content">
-              <a class="insights__link-title" href="#">
-                <h5 class="insights__content-title">
-                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </h5>
-              </a>
-            </div>
-            <div class="insights__info">
-              <p class="insights__info-date">
-                28 JANUARY, 2020
-              </p>
-              <a class="insights__link-autor" href="#">
-                <p class="insights__info-autor">
-                  BY ADMIN
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="insights__item insights__item--new">
-            <a class="insights__link-img" href="#">
-              <img class="insights__images" src="images/insights/3.jpg" alt="Insights photo">
-            </a>
-            <div class="insights__content">
-              <a class="insights__link-title" href="#">
-                <h5 class="insights__content-title">
-                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </h5>
-              </a>
-            </div>
-            <div class="insights__info">
-              <p class="insights__info-date">
-                28 JANUARY, 2020
-              </p>
-              <a class="insights__link-autor" href="#">
-                <p class="insights__info-autor">
-                  BY ADMIN
-                </p>
-              </a>
-            </div>
-          </div>
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
         </div>
       </div>
-    </section>
-  </main>
-
-  <div class="partners">
-    <div class="container">
-      <div class="partners__items">
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/1.png" alt="partners logo">
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/2.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
+          </a>
         </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/2.png" alt="partners logo">
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
         </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/3.png" alt="partners logo">
+      </div>
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/3.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
+          </a>
         </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/4.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/5.png" alt="partners logo">
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
         </div>
       </div>
     </div>
   </div>
+</section>
+    <div class="partners">
+  <div class="container">
+    <div class="partners__items">
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/1.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/2.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/3.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/4.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/5.png" alt="partners logo">
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-top__item footer-top__item--address">
-          <a class="logo footer-top__logo" href="#">
-            <img class="logo__image" src="images/logo.png" alt="logo">
-          </a>
-          <div class="footer-top__contacts footer-top__contacts--address">
-            <span class="footer-top__contacts-text">ADDRESS:</span>
-            <a class="footer-top__contacts-link" href="#">4772 Wines Lane Houston, TX 77032</a>
-          </div>
-          <div class="footer-top__contacts footer-top__contacts--phone">
-            <span class="footer-top__contacts-text">Telephone:</span>
-            <a class="footer-top__contacts-link" href="tel:+8323475843">+832-347-5843</a>
-          </div>
-          <div class="footer-top__contacts footer-top__contacts--email">
-            <span class="footer-top__contacts-text">Email:</span>
-            <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
-          </div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-top__item footer-top__item--address">
+        <a class="logo footer-top__logo" href="#">
+          <img class="logo__image" src="images/logo.png" alt="logo">
+        </a>
+        <div class="footer-top__contacts footer-top__contacts--address">
+          <span class="footer-top__contacts-text">ADDRESS:</span>
+          <a class="footer-top__contacts-link" href="#">4772 Wines Lane Houston, TX 77032</a>
         </div>
-        <div class="footer-top__item footer-top__item--nav">
-          <h6 class="footer-top__title">Services</h6>
-          <ul class="footer-top__nav-list">
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">About us</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Return Policy</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Our Blog</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Terms & Condition</a>
-            </li>
-          </ul>
+        <div class="footer-top__contacts footer-top__contacts--phone">
+          <span class="footer-top__contacts-text">Telephone:</span>
+          <a class="footer-top__contacts-link" href="tel:+8323475843">+832-347-5843</a>
         </div>
-        <div class="footer-top__item footer-top__item--nav">
-          <h6 class="footer-top__title">Account</h6>
-          <ul class="footer-top__nav-list">
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Your Account</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Checkout</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Login</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Register</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__item--descr">
-          <h6 class="footer-top__title">newsletter</h6>
-          <p class="footer-top__descr">
-            Subscribe by our newsletter and get update protidin.
-          </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="text" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
-          </form>
+        <div class="footer-top__contacts footer-top__contacts--email">
+          <span class="footer-top__contacts-text">Email:</span>
+          <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-bottom__copy">
-          ©2020 CopyRight Example. All rights reserved.
-        </p>
-        <ul class="footer-bottom__nav-list">
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Home</a>
+      <div class="footer-top__item footer-top__item--nav">
+        <h6 class="footer-top__title">Services</h6>
+        <ul class="footer-top__nav-list">
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">About us</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">About</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Return Policy</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Blog</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Our Blog</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Contact</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Terms & Condition</a>
           </li>
         </ul>
       </div>
+      <div class="footer-top__item footer-top__item--nav">
+        <h6 class="footer-top__title">Account</h6>
+        <ul class="footer-top__nav-list">
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Your Account</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Checkout</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Login</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__item footer-top__item--descr">
+        <h6 class="footer-top__title">newsletter</h6>
+        <p class="footer-top__descr">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+        <form class="footer-top__form" action="#">
+          <input class="footer-top__form-input" type="text" placeholder="Email address" required>
+          <button class="footer-top__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <p class="footer-bottom__copy">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+      <ul class="footer-bottom__nav-list">
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Home</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">About</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Blog</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
   <script src="js/main.min.js"></script>
 </body>

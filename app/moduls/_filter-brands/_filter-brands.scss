@@ -1,0 +1,29 @@
+.filter-brands{
+  &__label{
+    display: block;
+    margin-bottom: 1px;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-brands__checkbox{
+      background-color: #edf1f4;
+      border-radius: 5px;
+      .filter-brands__count{
+        color: $title;
+      }
+    }
+  }
+  &__checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    @extend %rubik-400;
+    color: $title;
+    cursor: pointer;
+  }
+  &__count{
+    color: #b3b3b3;
+  }
+}

@@ -1,0 +1,39 @@
+.filter-rpice{
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    @extend %rubik-400;
+    color: $title;
+    font-size: 14px;
+  }
+}
+
+.irs--flat{
+  height: 15px;
+  margin-bottom: 22px;
+  .irs-min,
+  .irs-max,
+  .irs-from,
+  .irs-to,
+  .irs-single,
+  .irs-handle>i:first-child{
+    display: none;
+  }
+  .irs-line {
+    top: 5.5px;
+    height: 3px;
+    background-color: #c2d2db;
+    border-radius: none;
+  }
+  .irs-bar {
+    top: 4.5px;
+    height: 5px;
+    background-color: #a3bbc8;
+  }
+  .irs-handle {
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #a3bbc8;
+  }
+}

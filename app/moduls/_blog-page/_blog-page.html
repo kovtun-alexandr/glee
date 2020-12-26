@@ -1,0 +1,19 @@
+<section class="blog-page">
+  <div class="container">
+    <div class="blog-page__inner">
+      <div class="blog-page__content">
+        <div class="blog-page__list">
+          {% include "app/moduls/_blog-page/_blog-page__item/_blog-page__item.html" %}
+          {% include "app/moduls/_blog-page/_blog-page__item/_blog-page__item.html" %}
+          {% include "app/moduls/_blog-page/_blog-page__item/_blog-page__item.html" %}
+        </div>
+      </div>
+      <div class="blog-page__aside">
+        {% include "app/moduls/_blog-page/_blog-page__search/_blog-page__search.html" %}
+        {% include "app/moduls/_filter-category/_filter-category.html" %}
+        {% include "app/moduls/_filter-posts/_filter-posts.html" %}
+      </div>
+    </div>
+    {% include "app/moduls/_pagination/_pagination.html" %}
+  </div>
+</section>

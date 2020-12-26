@@ -1,0 +1,36 @@
+.design{
+  padding: 105px 0 120px;
+  &__title{
+    margin-bottom: 35px;
+  }
+  &__items{
+    display: grid;
+    gap: 35px 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__item{
+    max-width: 370px;
+    min-height: 240px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-link{
+      display: block;
+      min-height: inherit;
+      padding: 40px 35px;
+    }
+    &-title,
+    &-subtitle{
+      @extend %dmsans-700;
+      font-style: 20px;
+    }
+    &-subtitle{
+      margin-bottom: 15px;
+    }
+    &-style{
+      @extend %dmsans-700;
+      font-style: 16px;
+      color: $accent;
+    }
+  }
+}

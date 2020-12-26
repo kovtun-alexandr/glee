@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product list 1</title>
+  <link rel="stylesheet" href="css/catalog.min.css">
+</head>
+
+<body>
+
+  {% include "app/moduls/_header/_header.html" %}
+
+  <main class="main">
+
+    {% include "app/moduls/_top/_top.html" %}
+
+    <section class="product">
+      <div class="container">
+        <div class="product__inner">
+          <div class="product-filter">
+            {% include "app/moduls/_filter-category/_filter-category.html" %}
+            {% include "app/moduls/_filter-price/_filter-price.html" %}
+            {% include "app/moduls/_filter-brands/_filter-brands.html" %}
+            {% include "app/moduls/_filter-products/_filter-products.html" %}
+          </div>
+          <div class="product-contant">
+            <div class="product-contant__list">
+            {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+              {% include "app/moduls/_products-item/_products-item.html" %}
+            </div>
+            {% include "app/moduls/_pagination/_pagination.html" %}
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "app/moduls/_partners/_partners.html" %}
+  </main>
+
+  {% include "app/moduls/_footer/_footer.html" %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
