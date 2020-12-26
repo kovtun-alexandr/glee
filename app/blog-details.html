@@ -5,129 +5,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/blog-details.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="top-container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__image" src="images/logo.png" alt="logo">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home</a>
-              <span>+</span>
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 1
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 2
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages</a>
-              <span>+</span>
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 1
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 2
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user__nav">
-          <a class="user__nav-link user__nav-link--search" href="#">
+  <div class="top-container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__image" src="images/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/index.html">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/about-us.html">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <span class="menu__list-link">Pages</span>
+            <span>+</span>
+            <ul class="menu__sub-list">
+              <li class="menu__sub-item">
+                <a class="menu__sub-link" href="/catalog.html">
+                  Product Grid
+                </a>
+              </li>
+              <li class="menu__sub-item">
+                <a class="menu__sub-link" href="/catalog-list.html">
+                  Product List
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/blog.html">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user__nav">
+        <div class="user__nav-search header-search">
+          <input class="header-search__input"  type="text" name="search">
+          <a class="header-search__link user__nav-link user__nav-link--search" href="#">
             <svg class="icon">
               <use xlink:href="images/svg/sprite/sprite.svg#search"></use>
             </svg>
           </a>
-          <a class="user__nav-link user__nav-link--heart" href="#">
-            <svg class="icon">
-              <use xlink:href="images/svg/sprite/sprite.svg#heart"></use>
-            </svg>
-            <span class="user__nav-count">0</span>
-          </a>
-          <a class="user__nav-link user__nav-link--cart" href="#">
-            <svg class="icon">
-              <use xlink:href="images/svg/sprite/sprite.svg#cart"></use>
-            </svg>
-            <span class="user__nav-count">0</span>
-          </a>
+        </div>
+        <a class="user__nav-link user__nav-link--heart" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#heart"></use>
+          </svg>
+          <span class="user__nav-count">0</span>
+        </a>
+        <a class="user__nav-link user__nav-link--cart" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#cart"></use>
+          </svg>
+          <span class="user__nav-count">0</span>
+        </a>
+        <div class="user__nav-block">
           <a class="user__nav-link user__nav-link--menu" href="#">
             <svg class="icon">
               <use xlink:href="images/svg/sprite/sprite.svg#menu"></use>
             </svg>
           </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-
-    <section class="top">
-      <div class="container">
-        <h2 class="top__title">Blog Details</h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Home
-              </a>
+          <ul class="user__nav-list">
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Blog
-              </a>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Blog Details
-              </a>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+
+    <section class="top">
+  <div class="container">
+    <h2 class="top__title">
+      Contact
+    </h2>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="/index.html">
+              Home
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link">
+            Contact
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
     <section class="blog-page">
       <div class="container">
         <div class="blog-page__inner">
@@ -147,7 +152,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="blog-page__contant-box" href="#">
+                <div class="blog-page__contant-box">
                   <h3>
                     Fonsectetur adipisicing eiusmod
                   </h3>
@@ -189,342 +194,437 @@
                   </p>
                 </div>
                 <div class="blog-page__autor autor-box">
-                  <div class="autor-box__img-box">
-                    <img class="autor-box__image" src="images/teams/3.jpg" alt="Autor">
-                  </div>
-                  <div class="autor-box__info-box">
-                    <div class="autor-box__info">
-                      <div class="autor-box__name">Mark N. Hernandez</div>
-                      <div class="autor-box__position">Designer</div>
-                    </div>
-                    <div class="autor-box__links">
-                      <div class="autor-box__tags">
-                        <span>Tags:</span>
-                        <a class="autor-box__link-tags" href="#">All</a>
-                        <a class="autor-box__link-tags" href="#">Trending</a>
-                      </div>
-                      <div class="autor-box__share">
-                        <span>Share:</span>
-                        <a class="autor-box__link-share" href="#">
-                          <svg class="icon">
-                            <use xlink:href="images/svg/sprite/sprite.svg#facebook"></use>
-                          </svg>
-                        </a>
-                        <a class="autor-box__link-share" href="#">
-                          <svg class="icon">
-                            <use xlink:href="images/svg/sprite/sprite.svg#twitter"></use>
-                          </svg>
-                        </a>
-                        <a class="autor-box__link-share" href="#">
-                          <svg class="icon">
-                            <use xlink:href="images/svg/sprite/sprite.svg#insta"></use>
-                          </svg>
-                        </a>
-                        <a class="autor-box__link-share" href="#">
-                          <svg class="icon">
-                            <use xlink:href="images/svg/sprite/sprite.svg#gplus"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div class="autor-box__img-box">
+    <img class="autor-box__image" src="images/teams/3.jpg" alt="Autor">
+  </div>
+  <div class="autor-box__info-box">
+    <div class="autor-box__info">
+      <div class="autor-box__name">Mark N. Hernandez</div>
+      <div class="autor-box__position">Designer</div>
+    </div>
+    <div class="autor-box__links">
+      <div class="autor-box__tags">
+        <span>Tags:</span>
+        <a class="autor-box__link-tags" href="#">All</a>
+        <a class="autor-box__link-tags" href="#">Trending</a>
+      </div>
+      <div class="autor-box__share">
+        <span>Share:</span>
+        <a class="autor-box__link-share" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+        <a class="autor-box__link-share" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#twitter"></use>
+          </svg>
+        </a>
+        <a class="autor-box__link-share" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#insta"></use>
+          </svg>
+        </a>
+        <a class="autor-box__link-share" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#gplus"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
                 <div class="blog-page__comments">
                   <p class="comments-form__title">3 Comments</p>
                   <div class="comments">
-                    <img class="comments__img" src="images/avatar/1.jpg" alt="Avatar">
-                    <div class="comments__content">
-                      <div class="comments__content-top">
-                        <div class="comments__content-name">Michle Jhon</div>
-                        <div class="comments__content-date">Add 11 Oct 2020</div>
-                      </div>
-                      <p class="comments__content-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
-                        maeenas accumsan lacus vel facilisis.
-                      </p>
-                      <a class="comments__content-reply" href="#">
-                        Reply
-                        <svg class="icon">
-                          <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
-                        </svg>
-                      </a>
-                      <div class="comments">
-                        <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
-                        <div class="comments__content">
-                          <div class="comments__content-top">
-                            <div class="comments__content-name">Michle Jhon</div>
-                            <div class="comments__content-date">Add 11 Oct 2020</div>
-                          </div>
-                          <p class="comments__content-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
-                            maeenas accumsan lacus vel facilisis.
-                          </p>
-                          <a class="comments__content-reply" href="#">
-                            Reply
-                            <svg class="icon">
-                              <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+  <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
+  <div class="comments__content">
+    <div class="comments__content-top">
+      <div class="comments__content-name">Michle Jhon</div>
+      <div class="comments__content-date">Add 11 Oct 2020</div>
+      <div class="comments__content-star star" data-rateyo-rating="4"></div>
+    </div>
+    <p class="comments__content-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
+      maeenas accumsan lacus vel facilisis.
+    </p>
+    <a class="comments__content-reply" href="#">
+      Reply
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
+      </svg>
+    </a>
+    <div class="comments">
+  <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
+  <div class="comments__content">
+    <div class="comments__content-top">
+      <div class="comments__content-name">Michle Jhon</div>
+      <div class="comments__content-date">Add 11 Oct 2020</div>
+      <div class="comments__content-star star" data-rateyo-rating="5"></div>
+    </div>
+    <p class="comments__content-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
+      maeenas accumsan lacus vel facilisis.
+    </p>
+    <a class="comments__content-reply" href="#">
+      Reply
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+  </div>
+</div>
                   <div class="comments">
-                    <img class="comments__img" src="images/avatar/3.jpg" alt="Avatar">
-                    <div class="comments__content">
-                      <div class="comments__content-top">
-                        <div class="comments__content-name">Michle Jhon</div>
-                        <div class="comments__content-date">Add 11 Oct 2020</div>
-                      </div>
-                      <p class="comments__content-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
-                        maeenas accumsan lacus vel facilisis.
-                      </p>
-                      <a class="comments__content-reply" href="#">
-                        Reply
-                        <svg class="icon">
-                          <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
+  <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
+  <div class="comments__content">
+    <div class="comments__content-top">
+      <div class="comments__content-name">Michle Jhon</div>
+      <div class="comments__content-date">Add 11 Oct 2020</div>
+      <div class="comments__content-star star" data-rateyo-rating="4"></div>
+    </div>
+    <p class="comments__content-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
+      maeenas accumsan lacus vel facilisis.
+    </p>
+    <a class="comments__content-reply" href="#">
+      Reply
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
+      </svg>
+    </a>
+    <div class="comments">
+  <img class="comments__img" src="images/avatar/2.jpg" alt="Avatar">
+  <div class="comments__content">
+    <div class="comments__content-top">
+      <div class="comments__content-name">Michle Jhon</div>
+      <div class="comments__content-date">Add 11 Oct 2020</div>
+      <div class="comments__content-star star" data-rateyo-rating="5"></div>
+    </div>
+    <p class="comments__content-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra
+      maeenas accumsan lacus vel facilisis.
+    </p>
+    <a class="comments__content-reply" href="#">
+      Reply
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#blog-right"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+  </div>
+</div>
                   <form class="comments-form" action="#">
-                    <p class="comments-form__title">Leave A Comment</p>
-                    <div class="comments-form__inputbox">
-                      <span class="comments-form__input-after--name">
-                        <input class="comments-form__input" type="text" placeholder="Name">
-                      </span>
-                      <span class="comments-form__input-after--email">
-                        <input class="comments-form__input" type="text" placeholder="E-mail">
-                      </span>
-                    </div>
-                    <span class="comments-form__textarea-after">
-                      <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
-                    </span>
-                    <button class="comments-form__btn" type="submit">Post Comment</button>
-                  </form>
+  <p class="comments-form__title">Leave A Comment</p>
+  <div class="comments-form__rating star-form">
+    <span class="star-form__tilte">Your Rating</span>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap">
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap">
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap">
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap">
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="star-form__label">
+      <input class="star-form__input" type="radio" name="stap" checked>
+      <span class="star-form__radio">
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+        <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#star"></use>
+        </svg>
+      </span>
+    </label>
+  </div>
+  <div class="comments-form__inputbox">
+    <span class="comments-form__input-after--name">
+      <input class="comments-form__input" type="text" placeholder="Name">
+    </span>
+    <span class="comments-form__input-after--email">
+      <input class="comments-form__input" type="text" placeholder="E-mail">
+    </span>
+  </div>
+  <span class="comments-form__textarea-after">
+    <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
+  </span>
+  <button class="comments-form__btn" type="submit">Post Comment</button>
+</form>
                 </div>
               </div>
             </div>
           </div>
           <div class="blog-page__aside">
             <div class="blog-page__search search-blog">
-              <form class="search-blog__search" action="#">
-                <label class="search-blog__label">
-                  <input class="search-blog__input" type="text">
-                  <button class="search-blog__btn" type="submit">
-                    <svg class="icon">
-                      <use xlink:href="images/svg/sprite/sprite.svg#search-blog"></use>
-                    </svg>
-                  </button>
-                </label>
-              </form>
-            </div>
+  <form class="search-blog__search" action="#">
+    <label class="search-blog__label">
+      <input class="search-blog__input" type="text">
+    </label>
+    <button class="search-blog__btn" type="submit">
+      <svg class="icon">
+        <use xlink:href="images/svg/sprite/sprite.svg#search-blog"></use>
+      </svg>
+    </button>
+  </form>
+</div>
             <div class="product-filter__item filter-category">
-              <h3 class="product-filter__title">CATEGORY</h3>
-              <form class="filter-category__form" action="#">
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <span class="filter-category__checkbox">
-                    Chair
-                  </span>
-                </label>
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <span class="filter-category__checkbox">
-                    Table
-                  </span>
-                </label>
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <span class="filter-category__checkbox">
-                    Lamp
-                  </span>
-                </label>
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <span class="filter-category__checkbox">
-                    Watch
-                  </span>
-                </label>
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <span class="filter-category__checkbox">
-                    Clock
-                  </span>
-                </label>
-              </form>
-            </div>
+  <h3 class="product-filter__title">CATEGORY</h3>
+  <form class="filter-category__form" action="#">
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <span class="filter-category__checkbox">
+        Chair
+      </span>
+    </label>
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <span class="filter-category__checkbox">
+        Table
+      </span>
+    </label>
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <span class="filter-category__checkbox">
+        Lamp
+      </span>
+    </label>
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <span class="filter-category__checkbox">
+        Watch
+      </span>
+    </label>
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <span class="filter-category__checkbox">
+        Clock
+      </span>
+    </label>
+  </form>
+</div>
             <div class="product-filter__item filter-posts">
-              <h3 class="product-filter__title">RECENT PosTS</h3>
-              <div class="filter-posts__list">
-                <div class="filter-posts__item">
-                  <a class="filter-posts__img-link" href="#">
-                    <img class="filter-posts__image" src="images/blog/post-1.jpg" alt="Posrs image">
-                  </a>
-                  <div class="filter-posts__content-box">
-                    <a class="filter-posts__title-link" href="#">
-                      <h4 class="filter-posts__title">Corem ipsum dolor tetur adipisicing elit</h4>
-                    </a>
-                    <div class="filter-posts__date">28 JANUARY, 2020</div>
-                  </div>
-                </div>
-                <div class="filter-posts__item">
-                  <a class="filter-posts__img-link" href="#">
-                    <img class="filter-posts__image" src="images/blog/post-2.jpg" alt="Posrs image">
-                  </a>
-                  <div class="filter-posts__content-box">
-                    <a class="filter-posts__title-link" href="#">
-                      <h4 class="filter-posts__title">Fdipisicing elit, sed do eiusmod tempor</h4>
-                    </a>
-                    <div class="filter-posts__date">28 JANUARY, 2020</div>
-                  </div>
-                </div>
-                <div class="filter-posts__item">
-                  <a class="filter-posts__img-link" href="#">
-                    <img class="filter-posts__image" src="images/blog/post-3.jpg" alt="Posrs image">
-                  </a>
-                  <div class="filter-posts__content-box">
-                    <a class="filter-posts__title-link" href="#">
-                      <h4 class="filter-posts__title">Eonsectetur adipisicing elit, sed do eiusmod </h4>
-                    </a>
-                    <div class="filter-posts__date">28 JANUARY, 2020</div>
-                  </div>
-                </div>
-                <div class="filter-posts__item">
-                  <a class="filter-posts__img-link" href="#">
-                    <img class="filter-posts__image" src="images/blog/post-4.jpg" alt="Posrs image">
-                  </a>
-                  <div class="filter-posts__content-box">
-                    <a class="filter-posts__title-link" href="#">
-                      <h4 class="filter-posts__title">gnim ad minim veniam, quis nostrud </h4>
-                    </a>
-                    <div class="filter-posts__date">28 JANUARY, 2020</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <h3 class="product-filter__title">RECENT PosTS</h3>
+  <div class="filter-posts__list">
+    <div class="filter-posts__item">
+      <a class="filter-posts__img-link" href="#">
+        <img class="filter-posts__image" src="images/blog/post-1.jpg" alt="Posrs image">
+      </a>
+      <div class="filter-posts__content-box">
+        <a class="filter-posts__title-link" href="#">
+          <h4 class="filter-posts__title">Corem ipsum dolor tetur adipisicing elit</h4>
+        </a>
+        <div class="filter-posts__date">28 JANUARY, 2020</div>
+      </div>
+    </div>
+    <div class="filter-posts__item">
+      <a class="filter-posts__img-link" href="#">
+        <img class="filter-posts__image" src="images/blog/post-2.jpg" alt="Posrs image">
+      </a>
+      <div class="filter-posts__content-box">
+        <a class="filter-posts__title-link" href="#">
+          <h4 class="filter-posts__title">Fdipisicing elit, sed do eiusmod tempor</h4>
+        </a>
+        <div class="filter-posts__date">28 JANUARY, 2020</div>
+      </div>
+    </div>
+    <div class="filter-posts__item">
+      <a class="filter-posts__img-link" href="#">
+        <img class="filter-posts__image" src="images/blog/post-3.jpg" alt="Posrs image">
+      </a>
+      <div class="filter-posts__content-box">
+        <a class="filter-posts__title-link" href="#">
+          <h4 class="filter-posts__title">Eonsectetur adipisicing elit, sed do eiusmod </h4>
+        </a>
+        <div class="filter-posts__date">28 JANUARY, 2020</div>
+      </div>
+    </div>
+    <div class="filter-posts__item">
+      <a class="filter-posts__img-link" href="#">
+        <img class="filter-posts__image" src="images/blog/post-4.jpg" alt="Posrs image">
+      </a>
+      <div class="filter-posts__content-box">
+        <a class="filter-posts__title-link" href="#">
+          <h4 class="filter-posts__title">gnim ad minim veniam, quis nostrud </h4>
+        </a>
+        <div class="filter-posts__date">28 JANUARY, 2020</div>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </div>
     </section>
-
-  </main>
-
-  <div class="partners">
-    <div class="container">
-      <div class="partners__items">
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/1.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/2.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/3.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/4.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/5.png" alt="partners logo">
-        </div>
+    <div class="partners">
+  <div class="container">
+    <div class="partners__items">
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/1.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/2.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/3.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/4.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/5.png" alt="partners logo">
       </div>
     </div>
   </div>
+</div>
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-top__item footer-top__item--address">
-          <a class="logo footer-top__logo" href="#">
-            <img class="logo__image" src="images/logo.png" alt="logo">
-          </a>
-          <div class="footer-top__contacts footer-top__contacts--address">
-            <span class="footer-top__contacts-text">ADDRESS:</span>
-            <a class="footer-top__contacts-link" href="#">4772 Wines Lane Houston, TX 77032</a>
-          </div>
-          <div class="footer-top__contacts footer-top__contacts--phone">
-            <span class="footer-top__contacts-text">Telephone:</span>
-            <a class="footer-top__contacts-link" href="tel:+8323475843">+832-347-5843</a>
-          </div>
-          <div class="footer-top__contacts footer-top__contacts--email">
-            <span class="footer-top__contacts-text">Email:</span>
-            <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
-          </div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-top__item footer-top__item--address">
+        <a class="logo footer-top__logo" href="#">
+          <img class="logo__image" src="images/logo.png" alt="logo">
+        </a>
+        <div class="footer-top__contacts footer-top__contacts--address">
+          <span class="footer-top__contacts-text">ADDRESS:</span>
+          <a class="footer-top__contacts-link" href="#">4772 Wines Lane Houston, TX 77032</a>
         </div>
-        <div class="footer-top__item footer-top__item--nav">
-          <h6 class="footer-top__title">Services</h6>
-          <ul class="footer-top__nav-list">
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">About us</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Return Policy</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Our Blog</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Terms & Condition</a>
-            </li>
-          </ul>
+        <div class="footer-top__contacts footer-top__contacts--phone">
+          <span class="footer-top__contacts-text">Telephone:</span>
+          <a class="footer-top__contacts-link" href="tel:+8323475843">+832-347-5843</a>
         </div>
-        <div class="footer-top__item footer-top__item--nav">
-          <h6 class="footer-top__title">Account</h6>
-          <ul class="footer-top__nav-list">
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Your Account</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Checkout</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Login</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Register</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__item--descr">
-          <h6 class="footer-top__title">newsletter</h6>
-          <p class="footer-top__descr">
-            Subscribe by our newsletter and get update protidin.
-          </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="text" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
-          </form>
+        <div class="footer-top__contacts footer-top__contacts--email">
+          <span class="footer-top__contacts-text">Email:</span>
+          <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-bottom__copy">
-          ©2020 CopyRight Example. All rights reserved.
-        </p>
-        <ul class="footer-bottom__nav-list">
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Home</a>
+      <div class="footer-top__item footer-top__item--nav">
+        <h6 class="footer-top__title">Services</h6>
+        <ul class="footer-top__nav-list">
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">About us</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">About</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Return Policy</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Blog</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Our Blog</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Contact</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Terms & Condition</a>
           </li>
         </ul>
       </div>
+      <div class="footer-top__item footer-top__item--nav">
+        <h6 class="footer-top__title">Account</h6>
+        <ul class="footer-top__nav-list">
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Your Account</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Checkout</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Login</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__item footer-top__item--descr">
+        <h6 class="footer-top__title">newsletter</h6>
+        <p class="footer-top__descr">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+        <form class="footer-top__form" action="#">
+          <input class="footer-top__form-input" type="text" placeholder="Email address" required>
+          <button class="footer-top__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <p class="footer-bottom__copy">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+      <ul class="footer-bottom__nav-list">
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Home</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">About</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Blog</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
   <script src="js/main.min.js"></script>
 </body>

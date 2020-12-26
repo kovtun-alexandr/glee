@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+
+  {% include "app/moduls/_header/_header.html" %}
+
+  <main class="main">
+    {% include "app/moduls/_main-slider/_main-slider.html" %}
+    {% include "app/moduls/_advantages/_advantages.html" %}
+    {% include "app/moduls/_products-week/_products-week.html" %}
+    {% include "app/moduls/_decor/_decor.html" %}
+    {% include "app/moduls/_design/_design.html" %}
+    {% include "app/moduls/_movies/_movies.html" %}
+    {% include "app/moduls/_insights/_insights.html" %}
+    {% include "app/moduls/_partners/_partners.html" %}
+  </main>
+
+  {% include "app/moduls/_footer/_footer.html" %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

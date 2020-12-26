@@ -1,0 +1,157 @@
+.products-week{
+  padding: 75px 0;
+  &__title{
+    margin-bottom: 35px;
+  }
+}
+
+.products{
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  &__item{
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 270px;
+    width: 100%;
+    &:hover{
+      .products__link-box{
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &__item--list{
+    max-width: 100%;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: inherit;
+    box-shadow: none;
+    border-radius: 0;
+    @extend %rubik-400;
+    margin-bottom: 30px;
+    .products__link-box{
+      display: none;
+    }
+    .products__img-box{
+      margin: 0 30px 0 0;
+      height: 500px;
+      max-width: 370px;
+      width: 100%;
+      border: 1px solid #f2f2f2;
+      align-items: center;
+      padding: 0 35px;
+    }
+    .products__image{
+      width: 100%;
+      object-fit: cover;
+    }
+    .products__content{
+      text-align: left;
+      padding: 90px 30px 40px;
+      .star{
+        display: block;
+      }
+    }
+    .products__title{
+      font-size: 40px;
+      color: #333;
+      margin-bottom: 25px;
+    }
+    .star{
+      display: block;
+      margin-bottom: 30px;
+    }
+    .products__price{
+      font-size: 30px;
+      margin-bottom: 40px;
+      &-new{
+        color: #333;
+      }
+    }
+    .products__text{
+      display: block;
+      line-height: 30px;
+      color: $title;
+      margin-bottom: 25px;
+    }
+    .products__link-block{
+      display: flex;
+      .products__link{
+        width: 50px;
+        height: 50px;
+        border-radius: 0;
+        margin: 0;
+        & + .products__link{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &__img-box{
+    margin: 0 0 55px;
+    min-height: 200px;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__image{
+    object-fit: cover;
+  }
+  &__title{
+    @extend %dmsans-500;
+    color: $title;
+    margin-bottom: 15px;
+  }
+  &__price{
+    @extend %dmsans-700;
+    margin-bottom: 15px;
+    &-new{
+      color: $accent;
+    }
+  }
+  &__link-box{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    transform: translateY(-500px);
+    transition: all .3s;
+    max-width: 175px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  &__link{
+    @extend %btn;
+    margin: 0 7px;
+    transition: all .3s;
+    .icon{
+      width: 22px;
+      height: 20px;
+    }
+    &:hover{
+      background-color: $btn;
+      fill: #fff;
+    }
+  }
+  &__content{
+    text-align: center;
+    .star{
+      display: none;
+    }
+  }
+  &__text{
+    display: none;
+  }
+  &__link-block{
+    display: none;
+  }
+}

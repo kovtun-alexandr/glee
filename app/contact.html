@@ -1,560 +1,543 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.min.css">
+  </head>
 
-<body>
+  <body>
 
-  <header class="header">
-    <div class="top-container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__image" src="images/logo.png" alt="logo">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home</a>
-              <span>+</span>
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 1
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 2
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Home 3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages</a>
-              <span>+</span>
-              <ul class="menu__sub-list">
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 1
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 2
-                  </a>
-                </li>
-                <li class="menu__sub-item">
-                  <a class="menu__sub-link" href="#">
-                    Pages 3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user__nav">
-          <a class="user__nav-link user__nav-link--search" href="#">
+    <header class="header">
+  <div class="top-container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__image" src="images/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/index.html">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/about-us.html">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <span class="menu__list-link">Pages</span>
+            <span>+</span>
+            <ul class="menu__sub-list">
+              <li class="menu__sub-item">
+                <a class="menu__sub-link" href="/catalog.html">
+                  Product Grid
+                </a>
+              </li>
+              <li class="menu__sub-item">
+                <a class="menu__sub-link" href="/catalog-list.html">
+                  Product List
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/blog.html">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user__nav">
+        <div class="user__nav-search header-search">
+          <input class="header-search__input"  type="text" name="search">
+          <a class="header-search__link user__nav-link user__nav-link--search" href="#">
             <svg class="icon">
               <use xlink:href="images/svg/sprite/sprite.svg#search"></use>
             </svg>
           </a>
-          <a class="user__nav-link user__nav-link--heart" href="#">
-            <svg class="icon">
-              <use xlink:href="images/svg/sprite/sprite.svg#heart"></use>
-            </svg>
-            <span class="user__nav-count">0</span>
-          </a>
-          <a class="user__nav-link user__nav-link--cart" href="#">
-            <svg class="icon">
-              <use xlink:href="images/svg/sprite/sprite.svg#cart"></use>
-            </svg>
-            <span class="user__nav-count">0</span>
-          </a>
+        </div>
+        <a class="user__nav-link user__nav-link--heart" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#heart"></use>
+          </svg>
+          <span class="user__nav-count">0</span>
+        </a>
+        <a class="user__nav-link user__nav-link--cart" href="#">
+          <svg class="icon">
+            <use xlink:href="images/svg/sprite/sprite.svg#cart"></use>
+          </svg>
+          <span class="user__nav-count">0</span>
+        </a>
+        <div class="user__nav-block">
           <a class="user__nav-link user__nav-link--menu" href="#">
             <svg class="icon">
               <use xlink:href="images/svg/sprite/sprite.svg#menu"></use>
             </svg>
           </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-
-    <section class="top">
-      <div class="container">
-        <h2 class="top__title">Contact</h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Home
-              </a>
+          <ul class="user__nav-list">
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Contact
-              </a>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
+            </li>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-item--link">
+                <svg class="icon">
+                  <use xlink:href="images/svg/sprite/sprite.svg#input-name"></use>
+                </svg>
+                  Login
+                </a>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <div class="container">
-        <div class="contacts__inner">
-          <p class="contacts__subtitle">Write Here</p>
-          <h2 class="contacts__title title">Get In Touch</h2>
-          <div class="contacts__list">
-            <div class="contacts__item">
-              <div class="contacts__item-icon">
-                <svg class="icon icon-location">
-                  <use xlink:href="images/svg/sprite/sprite.svg#location"></use>
-                </svg>
-              </div>
-              <div class="contacts__item-title">Address</div>
-              <ul class="contacts__item-list">
-                <li class="contacts__item-item">
-                  <span>
-                    2416 Mapleview Drive<br>
-                    Tampa, FL 33634
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div class="contacts__item">
-              <div class="contacts__item-icon">
-                <svg class="icon icon-letter">
-                  <use xlink:href="images/svg/sprite/sprite.svg#letter"></use>
-                </svg>
-              </div>
-              <div class="contacts__item-title">Our Email</div>
-              <ul class="contacts__item-list">
-                <li class="contacts__item-item">
-                  <span>Main Email :</span>
-                  <a class="contacts__item-link" href="mailto:contact@website.com">contact@website.com</a>
-                </li>
-                <li class="contacts__item-item">
-                  <span>Inquiries :</span>
-                  <a class="contacts__item-link" href="mailto:Info@mail.com">Info@mail.com</a>
-                </li>
-              </ul>
-            </div>
-            <div class="contacts__item">
-              <div class="contacts__item-icon">
-                <svg class="icon icon-phone">
-                  <use xlink:href="images/svg/sprite/sprite.svg#our-phone"></use>
-                </svg>
-              </div>
-              <div class="contacts__item-title">Our Phone</div>
-              <ul class="contacts__item-list">
-                <li class="contacts__item-item">
-                  <span>Office Telephone :</span>
-                  <a class="contacts__item-link" href="tel:0029129102320">0029129102320</a>
-                </li>
-                <li class="contacts__item-item">
-                  <span>Mobile :</span>
-                  <a class="contacts__item-link" href="tel:000232439493">000 2324 39493</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="contacts-form__wrapp">
-            <div class="contacts-form__block">
-              <form class="contacts-form__form" action="#">
-                <div class="contacts-form__inputbox">
-                  <span class="contacts-form__input-after--name">
-                    <input class="contacts-form__input" type="text" placeholder="Name">
-                  </span>
-                  <span class="contacts-form__input-after--email">
-                    <input class="contacts-form__input" type="text" placeholder="Email">
-                  </span>
-                </div>
-                <span class="contacts-form__textarea-after">
-                  <textarea class="contacts-form__textarea" placeholder="MESSAGE"></textarea>
-                </span>
-                <button class="contacts-form__btn" type="submit">SEND MESSAGE</button>
-              </form>
-            </div>
-            <div class="contacts-map__block">
-              <div id="map">My map will go here</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="insights">
-      <div class="container">
-        <div class="insights__title-blok">
-          <h2 class="insights__title title">
-            Our Insights & Articles
-          </h2>
-          <a class="insights__link" href="#">
-            View All
-            <svg class="icon">
-              <use xlink:href="images/svg/sprite/sprite.svg#chevron-right"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="insights__inner">
-          <div class="insights__item insights__item--new">
-            <a class="insights__link-img" href="#">
-              <img class="insights__images" src="images/insights/1.jpg" alt="Insights photo">
-            </a>
-            <div class="insights__content">
-              <a class="insights__link-title" href="#">
-                <h5 class="insights__content-title">
-                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </h5>
-              </a>
-            </div>
-            <div class="insights__info">
-              <p class="insights__info-date">
-                28 JANUARY, 2020
-              </p>
-              <a class="insights__link-autor" href="#">
-                <p class="insights__info-autor">
-                  BY ADMIN
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="insights__item insights__item--new">
-            <a class="insights__link-img" href="#">
-              <img class="insights__images" src="images/insights/2.jpg" alt="Insights photo">
-            </a>
-            <div class="insights__content">
-              <a class="insights__link-title" href="#">
-                <h5 class="insights__content-title">
-                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </h5>
-              </a>
-            </div>
-            <div class="insights__info">
-              <p class="insights__info-date">
-                28 JANUARY, 2020
-              </p>
-              <a class="insights__link-autor" href="#">
-                <p class="insights__info-autor">
-                  BY ADMIN
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="insights__item insights__item--new">
-            <a class="insights__link-img" href="#">
-              <img class="insights__images" src="images/insights/3.jpg" alt="Insights photo">
-            </a>
-            <div class="insights__content">
-              <a class="insights__link-title" href="#">
-                <h5 class="insights__content-title">
-                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </h5>
-              </a>
-            </div>
-            <div class="insights__info">
-              <p class="insights__info-date">
-                28 JANUARY, 2020
-              </p>
-              <a class="insights__link-autor" href="#">
-                <p class="insights__info-autor">
-                  BY ADMIN
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div class="partners">
-    <div class="container">
-      <div class="partners__items">
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/1.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/2.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/3.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/4.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/5.png" alt="partners logo">
         </div>
       </div>
     </div>
   </div>
+</header>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-top__item footer-top__item--address">
-          <a class="logo footer-top__logo" href="#">
-            <img class="logo__image" src="images/logo.png" alt="logo">
+    <main class="main">
+      <section class="top">
+  <div class="container">
+    <h2 class="top__title">
+      Contact
+    </h2>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="/index.html">
+              Home
           </a>
-          <div class="footer-top__contacts footer-top__contacts--address">
-            <span class="footer-top__contacts-text">ADDRESS:</span>
-            <a class="footer-top__contacts-link" href="#">4772 Wines Lane Houston, TX 77032</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link">
+            Contact
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="contacts">
+  <div class="container">
+    <div class="contacts__inner">
+      <p class="contacts__subtitle">Write Here</p>
+      <h2 class="contacts__title title">Get In Touch</h2>
+      <div class="contacts__list">
+        <div class="contacts__item">
+          <div class="contacts__item-icon">
+            <svg class="icon icon-location">
+              <use xlink:href="images/svg/sprite/sprite.svg#location"></use>
+            </svg>
           </div>
-          <div class="footer-top__contacts footer-top__contacts--phone">
-            <span class="footer-top__contacts-text">Telephone:</span>
-            <a class="footer-top__contacts-link" href="tel:+8323475843">+832-347-5843</a>
-          </div>
-          <div class="footer-top__contacts footer-top__contacts--email">
-            <span class="footer-top__contacts-text">Email:</span>
-            <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
-          </div>
-        </div>
-        <div class="footer-top__item footer-top__item--nav">
-          <h6 class="footer-top__title">Services</h6>
-          <ul class="footer-top__nav-list">
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">About us</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Return Policy</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Our Blog</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Terms & Condition</a>
+          <div class="contacts__item-title">Address</div>
+          <ul class="contacts__item-list">
+            <li class="contacts__item-item">
+              <span>
+                2416 Mapleview Drive<br>
+                Tampa, FL 33634
+              </span>
             </li>
           </ul>
         </div>
-        <div class="footer-top__item footer-top__item--nav">
-          <h6 class="footer-top__title">Account</h6>
-          <ul class="footer-top__nav-list">
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Your Account</a>
+        <div class="contacts__item">
+          <div class="contacts__item-icon">
+            <svg class="icon icon-letter">
+              <use xlink:href="images/svg/sprite/sprite.svg#letter"></use>
+            </svg>
+          </div>
+          <div class="contacts__item-title">Our Email</div>
+          <ul class="contacts__item-list">
+            <li class="contacts__item-item">
+              <span>Main Email :</span>
+              <a class="contacts__item-link" href="mailto:contact@website.com">contact@website.com</a>
             </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Checkout</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Login</a>
-            </li>
-            <li class="footer-top__nav-item">
-              <a class="footer-top__nav-link" href="#">Register</a>
+            <li class="contacts__item-item">
+              <span>Inquiries :</span>
+              <a class="contacts__item-link" href="mailto:Info@mail.com">Info@mail.com</a>
             </li>
           </ul>
         </div>
-        <div class="footer-top__item footer-top__item--descr">
-          <h6 class="footer-top__title">newsletter</h6>
-          <p class="footer-top__descr">
-            Subscribe by our newsletter and get update protidin.
-          </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="text" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
-          </form>
+        <div class="contacts__item">
+          <div class="contacts__item-icon">
+            <svg class="icon icon-phone">
+              <use xlink:href="images/svg/sprite/sprite.svg#our-phone"></use>
+            </svg>
+          </div>
+          <div class="contacts__item-title">Our Phone</div>
+          <ul class="contacts__item-list">
+            <li class="contacts__item-item">
+              <span>Office Telephone :</span>
+              <a class="contacts__item-link" href="tel:0029129102320">0029129102320</a>
+            </li>
+            <li class="contacts__item-item">
+              <span>Mobile :</span>
+              <a class="contacts__item-link" href="tel:000232439493">000 2324 39493</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-bottom__copy">
-          ©2020 CopyRight Example. All rights reserved.
-        </p>
-        <ul class="footer-bottom__nav-list">
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Home</a>
+      <div class="contacts-form__wrapp">
+        <div class="contacts-form__block">
+          <form class="contacts-form__form" action="#">
+            <div class="contacts-form__inputbox">
+              <span class="contacts-form__input-after--name">
+                <input class="contacts-form__input" type="text" placeholder="Name">
+              </span>
+              <span class="contacts-form__input-after--email">
+                <input class="contacts-form__input" type="text" placeholder="Email">
+              </span>
+            </div>
+            <span class="contacts-form__textarea-after">
+              <textarea class="contacts-form__textarea" placeholder="MESSAGE"></textarea>
+            </span>
+            <button class="contacts-form__btn" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+        <div class="contacts-map__block">
+          <div id="map">My map will go here</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="insights">
+  <div class="container">
+    <div class="insights__title-blok">
+      <h2 class="insights__title title">
+            Our Insights & Articles
+          </h2>
+      <a class="insights__link" href="#">
+            View All
+            <svg class="icon">
+          <use xlink:href="images/svg/sprite/sprite.svg#chevron-right"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="insights__inner">
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/1.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
+          </a>
+        </div>
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/2.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
+          </a>
+        </div>
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="insights__item insights__item--new">
+        <a class="insights__link-img" href="#">
+          <img class="insights__images" src="images/insights/3.jpg" alt="Insights photo">
+        </a>
+        <div class="insights__content">
+          <a class="insights__link-title" href="#">
+            <h5 class="insights__content-title">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h5>
+          </a>
+        </div>
+        <div class="insights__info">
+          <p class="insights__info-date">
+            28 JANUARY, 2020
+          </p>
+          <a class="insights__link-autor" href="#">
+            <p class="insights__info-autor">
+              BY ADMIN
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <div class="partners">
+  <div class="container">
+    <div class="partners__items">
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/1.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/2.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/3.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/4.png" alt="partners logo">
+      </div>
+      <div class="partners__item">
+        <img class="partners__image" src="images/partners/5.png" alt="partners logo">
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-top__item footer-top__item--address">
+        <a class="logo footer-top__logo" href="#">
+          <img class="logo__image" src="images/logo.png" alt="logo">
+        </a>
+        <div class="footer-top__contacts footer-top__contacts--address">
+          <span class="footer-top__contacts-text">ADDRESS:</span>
+          <a class="footer-top__contacts-link" href="#">4772 Wines Lane Houston, TX 77032</a>
+        </div>
+        <div class="footer-top__contacts footer-top__contacts--phone">
+          <span class="footer-top__contacts-text">Telephone:</span>
+          <a class="footer-top__contacts-link" href="tel:+8323475843">+832-347-5843</a>
+        </div>
+        <div class="footer-top__contacts footer-top__contacts--email">
+          <span class="footer-top__contacts-text">Email:</span>
+          <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
+        </div>
+      </div>
+      <div class="footer-top__item footer-top__item--nav">
+        <h6 class="footer-top__title">Services</h6>
+        <ul class="footer-top__nav-list">
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">About us</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">About</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Return Policy</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Blog</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Our Blog</a>
           </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">Contact</a>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Terms & Condition</a>
           </li>
         </ul>
       </div>
+      <div class="footer-top__item footer-top__item--nav">
+        <h6 class="footer-top__title">Account</h6>
+        <ul class="footer-top__nav-list">
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Your Account</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Checkout</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Login</a>
+          </li>
+          <li class="footer-top__nav-item">
+            <a class="footer-top__nav-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__item footer-top__item--descr">
+        <h6 class="footer-top__title">newsletter</h6>
+        <p class="footer-top__descr">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+        <form class="footer-top__form" action="#">
+          <input class="footer-top__form-input" type="text" placeholder="Email address" required>
+          <button class="footer-top__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-  </footer>
-  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer></script>
+    <div class="footer-bottom">
+      <p class="footer-bottom__copy">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+      <ul class="footer-bottom__nav-list">
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Home</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">About</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Blog</a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer></script>
 
-  <script>
-    let map;
+    <script>
+      let map;
 
-    function initMap() {
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 29.752469456855994, lng: -95.37004057009497 },
-        zoom: 9,
-        styles: [
-          {
-            "elementType": "geometry",
-            "stylers": [
+      function initMap() {
+        map = new google
+          .maps
+          .Map(document.getElementById("map"), {
+            center: {
+              lat: 29.752469456855994,
+              lng: -95.37004057009497
+            },
+            zoom: 9,
+            styles: [
               {
-                "hue": "#ff4400"
-              },
-              {
-                "saturation": -68
-              },
-              {
-                "lightness": -4
-              },
-              {
-                "gamma": 0.72
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "hue": "#ff4400"
+                  }, {
+                    "saturation": -68
+                  }, {
+                    "lightness": -4
+                  }, {
+                    "gamma": 0.72
+                  }
+                ]
+              }, {
+                "featureType": "road",
+                "elementType": "labels.icon"
+              }, {
+                "featureType": "landscape.man_made",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "hue": "#0077ff"
+                  }, {
+                    "gamma": 3.1
+                  }
+                ]
+              }, {
+                "featureType": "water",
+                "stylers": [
+                  {
+                    "hue": "#00ccff"
+                  }, {
+                    "gamma": 0.44
+                  }, {
+                    "saturation": -33
+                  }
+                ]
+              }, {
+                "featureType": "poi.park",
+                "stylers": [
+                  {
+                    "hue": "#44ff00"
+                  }, {
+                    "saturation": -23
+                  }
+                ]
+              }, {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "hue": "#007fff"
+                  }, {
+                    "gamma": 0.77
+                  }, {
+                    "saturation": 65
+                  }, {
+                    "lightness": 99
+                  }
+                ]
+              }, {
+                "featureType": "water",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "gamma": 0.11
+                  }, {
+                    "weight": 5.6
+                  }, {
+                    "saturation": 99
+                  }, {
+                    "hue": "#0091ff"
+                  }, {
+                    "lightness": -86
+                  }
+                ]
+              }, {
+                "featureType": "transit.line",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "lightness": -48
+                  }, {
+                    "hue": "#ff5e00"
+                  }, {
+                    "gamma": 1.2
+                  }, {
+                    "saturation": -23
+                  }
+                ]
+              }, {
+                "featureType": "transit",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "saturation": -64
+                  }, {
+                    "hue": "#ff9100"
+                  }, {
+                    "lightness": 16
+                  }, {
+                    "gamma": 0.47
+                  }, {
+                    "weight": 2.7
+                  }
+                ]
               }
             ]
-          },
-          {
-            "featureType": "road",
-            "elementType": "labels.icon"
-          },
-          {
-            "featureType": "landscape.man_made",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "hue": "#0077ff"
-              },
-              {
-                "gamma": 3.1
-              }
-            ]
-          },
-          {
-            "featureType": "water",
-            "stylers": [
-              {
-                "hue": "#00ccff"
-              },
-              {
-                "gamma": 0.44
-              },
-              {
-                "saturation": -33
-              }
-            ]
-          },
-          {
-            "featureType": "poi.park",
-            "stylers": [
-              {
-                "hue": "#44ff00"
-              },
-              {
-                "saturation": -23
-              }
-            ]
-          },
-          {
-            "featureType": "water",
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "hue": "#007fff"
-              },
-              {
-                "gamma": 0.77
-              },
-              {
-                "saturation": 65
-              },
-              {
-                "lightness": 99
-              }
-            ]
-          },
-          {
-            "featureType": "water",
-            "elementType": "labels.text.stroke",
-            "stylers": [
-              {
-                "gamma": 0.11
-              },
-              {
-                "weight": 5.6
-              },
-              {
-                "saturation": 99
-              },
-              {
-                "hue": "#0091ff"
-              },
-              {
-                "lightness": -86
-              }
-            ]
-          },
-          {
-            "featureType": "transit.line",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "lightness": -48
-              },
-              {
-                "hue": "#ff5e00"
-              },
-              {
-                "gamma": 1.2
-              },
-              {
-                "saturation": -23
-              }
-            ]
-          },
-          {
-            "featureType": "transit",
-            "elementType": "labels.text.stroke",
-            "stylers": [
-              {
-                "saturation": -64
-              },
-              {
-                "hue": "#ff9100"
-              },
-              {
-                "lightness": 16
-              },
-              {
-                "gamma": 0.47
-              },
-              {
-                "weight": 2.7
-              }
-            ]
-          }
-        ]
-      });
-    }
-  </script>
-  <script src="js/main.min.js"></script>
-</body>
+          });
+      }
+    </script>
+    <script src="js/main.min.js"></script>
+  </body>
 
 </html>

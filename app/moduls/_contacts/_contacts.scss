@@ -1,0 +1,194 @@
+.contacts{
+  padding: 120px 0 70px;
+  &__subtitle{
+    @extend %poppins-700;
+    color: $accent;
+    text-align: center;
+  }
+  &__title{
+    color: $nav;
+    margin-bottom: 75px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 3px solid transparent;
+    transition: all .3s;
+    &:hover{
+      border: 3px solid $accent;
+      .contacts__item-icon{
+        background-color: $accent;
+        .icon{
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &__item-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 35px;
+    transition: all .3s;
+    .icon{
+      fill: $accent;
+      transition: all .3s;
+    }
+    .icon-location{
+      width: 30px;
+      height: 45px;
+    }
+    .icon-letter{
+      width: 40px;
+      height: 35px;
+    }
+    .icon-phone{
+      width: 40px;
+      height: 45px;
+    }
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: -10px;
+  }
+  &__item-list{
+    margin-bottom: 80px;
+    color: #565872;
+    line-height: 30px;
+    @extend %rubik-400;
+    .contacts__item-link{
+      color: inherit;
+      font-family: inherit;
+    }
+  }
+}
+
+.contacts-form{
+  &__wrapp{
+    display: flex;
+    gap: 50px;
+  }
+  &__block{
+    max-width: 620px;
+    width: 100%;
+  }
+  &__form{
+    display: block;
+    width: 100%;
+  }
+  &__inputbox{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    span{
+      width: 50%;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 23px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &__input-after--name{
+    &::after{
+      background-image: url('../images/svg/icons/input-name.svg');
+      width: 14px;
+      height: 14px;
+    }
+  }
+  &__input-after--email{
+    &::after{
+      background-image: url('../images/svg/icons/input-email.svg');
+      width: 18px;
+      height: 13px;
+    }
+  }
+  &__input{
+    width: 100%;
+    padding: 15px 45px 15px 10px;
+    background-color: #fafafa;
+    border: none;
+    outline: 0;
+    &::placeholder{
+      text-transform: uppercase;
+      @extend %rubik-400;
+    }
+    &:focus{
+      border-radius: 0;
+      border: 1px solid $accent;
+    }
+  }
+  &__textarea-after{
+    display: block;
+    width: 100%;
+    height: 175px;
+    position: relative;
+    margin-bottom: 30px;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/icons/commit-textarea.svg');
+      width: 18px;
+      height: 15px;
+      top: 10px;
+      right: 23px;
+    }
+  }
+  &__textarea{
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+    background-color: #fafafa;
+    border: none;
+    resize: none;
+    outline: 0;
+    &::placeholder{
+      text-transform: uppercase;
+      @extend %rubik-400;
+    }
+    &:focus{
+      border-radius: 0;
+      border: 1px solid $accent;
+    }
+  }
+  &__btn{
+    @extend %poppins-600;
+    font-size: 15px;
+    color: #fff;
+    background-color: $accent;
+    border: none;
+    padding: 14px 45px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+
+.contacts-map__block{
+  max-width: 500px;
+  width: 100%;
+  #map {
+    width: 100%;
+    height: 335px;
+  }
+}

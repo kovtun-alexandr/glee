@@ -1,0 +1,141 @@
+.blog-page{
+  .star-form,
+  .star{
+    display: none;
+  }  
+}
+
+.comments-form{
+  &__title{
+    font-size: 24px;
+    color: $nav;
+    line-height: 30px;
+    margin: 60px 0 50px;
+    @extend %rubik-700;
+  }
+  &__rating{
+    margin-bottom: 30px;
+  }
+  &__inputbox{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  &__input{
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    border: 1px solid #f2f2f2;
+    padding: 0 50px 0 20px;
+    &::placeholder{
+      color: $footer-text;
+    }
+    &:focus{
+      border: 1px solid $accent;
+      outline: 0;
+      border-radius: 0;
+    }
+  }
+  &__input-after--name{
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/icons/input-name.svg');
+      width: 14px;
+      height: 14px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+  &__input-after--email{
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/icons/input-email.svg');
+      width: 18px;
+      height: 13px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+  &__textarea{
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #f2f2f2;
+    margin-bottom: 40px;
+    padding: 20px 45px 20px 20px;
+    resize: none;
+    &::placeholder{
+      color: $footer-text;
+    }
+    &:focus{
+      border: 1px solid $accent;
+      outline: 0;
+      border-radius: 0;
+    }
+  }
+  &__textarea-after{
+    display: block;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/icons/commit-textarea.svg');
+      width: 18px;
+      height: 15px;
+      top: 18px;
+      right: 20px;
+      background-repeat: no-repeat;
+    }
+  }
+  &__btn{
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $btn;
+    border: none;
+    padding: 15px 35px;
+    box-shadow: 0px 7px 20px 0px rgba($btn, 0.3);
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+.star-form{
+  display: flex;
+  &__tilte{
+    line-height: 28px;
+    margin-right: 60px;
+  }
+  &__label{
+    & + .star-form__label{
+      margin-left: 25px;
+    }
+  }
+  &__input{
+    @extend %radio-hidden;
+    &:checked + .star-form__radio .icon{
+      fill: #ffc35b;
+    }
+  }
+  &__radio {
+    cursor: pointer;
+    .icon{
+      width: 18px;
+      height: 18px;
+      fill: #f0f0f0;
+    }
+    &:hover .icon{
+      fill: #ffc35b;
+    }
+  }
+}
