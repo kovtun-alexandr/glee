@@ -118,7 +118,7 @@ function cleanDist(){
 }
 
 function watching(){
-  watch(['app/scss/**/*.scss'], styles);
+  watch(['app/**/*.scss'], styles);
   watch(['app/nunjucks/*.njk','app/moduls/**/*.html'], nunjucks);
   watch(['app/images/svg/icons/*.svg'], svgSpriteBuild);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);

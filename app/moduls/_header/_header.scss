@@ -5,9 +5,15 @@
   padding: 48px 0 45px;
 }
 
-.menu__list{
-  display: flex;
-  &-item{
+.menu__btn{
+  display: none;
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__item{
     @extend %rubik-500;
     font-size: 15px;
     color: $nav;
@@ -45,15 +51,16 @@
       transform: rotateY();
       padding-bottom: 2px;
       transition: all .3s;
+      color: $nav;
       &:hover{
         border-bottom: 1px solid $title;
       }
     }
   }
-  &-item + .menu__list-item{
+  &__item + .menu__item{
     margin-left: 30px;
   }
-  &-link{
+  &__link{
     color: inherit;
     padding-right: 5px;
   }
@@ -195,5 +202,193 @@ ul.user__nav-list{
   }
   &__nav-list--active{
     display: block;
+  }
+}
+
+@media (max-width: 1024px){
+  .logo{
+    margin-right: auto;
+    padding-left: 25px;
+  }
+  ul.menu__list{
+    padding: 20px 0;
+  }
+  .menu{
+    position: relative;
+    order: -1;
+    &__btn{
+      display: flex;
+      width: 30px;
+      height: 24px;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background-color: transparent;
+      flex-direction: column;
+      justify-content: space-between;
+      &::before,
+      &::after{
+        content: '';
+        position: relative;
+        width: 30px;
+        height: 2px;
+        background-color: $nav;
+      }
+      span{
+        width: 30px;
+        height: 2px;
+        background-color: $nav;
+      }
+    }
+    &__btn--active{
+      justify-content: center;
+      &::before{
+        width: 32px;
+        transform: rotate(45deg);
+        top: 2px;
+        left: -1px;
+      }
+      &::after{
+        width: 32px;
+        transform: rotate(-45deg);
+        left: -1px;
+      }
+      span{
+        display: none;
+      }
+    }
+    &__list{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100vw - 30px);
+      background-color: #fff;
+      top: 40px;
+      transform: translateY(-150%);
+    }
+    &__list--active{
+      transform: translateY(0);
+    }
+    &__item{
+      padding: 12px 0;
+      width: 100%;
+      text-align: center;
+      &+.menu__item{
+        margin-left: 0;
+      }
+      &:hover .menu__sub-list{
+        display: none;
+      }
+      ul.menu__sub-list.menu__sub-list--active{
+        display: block;
+        transform: rotateX(0deg);
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all .3s;
+        box-shadow: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .header{
+    &__inner{
+      padding: 20px 0;
+    }
+  }
+  .header-search{
+    &:hover > .header-search__input {
+      display: block;
+      right: -245px;
+      top: 60px;
+      width: calc(100vw - 30px);
+      height: 50px;
+      padding: 0 20px;
+    }
+    &__input{
+      display: none;
+    }
+  }
+  .header-search--active{
+    .header-search__input{
+      display: block;
+      display: block;
+      right: -245px;
+      top: 60px;
+      width: calc(100vw - 30px);
+      height: 50px;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 580px){
+  .header{
+    &__inner{
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+  }
+  .logo{
+    width: 100%;
+    margin: 0 auto 15px;
+    padding: 0;
+    &__image{
+      margin: 0 auto;;
+    }
+  }
+  .menu{
+    order: 0;
+  }
+  .user{
+    &__nav-link{
+      width: 40px;
+      height: 40px;
+    }
+    &__nav-link--heart, 
+    &__nav-link--cart{
+      width: 55px;
+    }
+    &__nav-link--search{
+      margin-right: 15px;
+    }
+    &__nav-count{
+      top: 3px;
+      right: 7px;
+    }
+    &__nav-link--menu{
+      margin-left: 15px;
+      .icon{
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .header-search{
+    &:hover > .header-search__input {
+      right: -166px;
+      top: 46px;
+      width: calc(100vw - 30px);
+      height: 45px;
+    }
+    &__input{
+      display: none;
+    }
+  }
+  .header-search--active{
+    .header-search__input{
+      display: block;
+      right: -166px;
+      top: 46px;
+      width: calc(100vw - 30px);
+      height: 45px;
+      padding: 0 10px;
+    }
   }
 }
