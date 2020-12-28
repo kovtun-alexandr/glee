@@ -2,6 +2,19 @@ $(function () {
   const prefix = '$',
   postfix = '.00';
 
+  $('.menu__btn').on('click', function(){
+    $(this).toggleClass('menu__btn--active');
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.menu__item').on('click', function(){
+    $(this).find('.menu__sub-list').toggleClass('menu__sub-list--active');
+  });
+
+  $('.user__nav-link--search').on('click', function(){
+    $('.header-search').toggleClass('header-search--active');
+  })
+
   $('.production-tubs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.production-tubs__top-item').removeClass('production-tubs__top-item--active');
@@ -42,14 +55,14 @@ $(function () {
     asNavFor: '.production__main',
     draggable: false,
     vertical: true
-  })
+  });
   $('.production__main').slick({
     asNavFor: '.production__thumb',
     focusOnSelect: true,
     arrows: false,
     draggable: false,
     fade: true
-  })
+  });
 
   $('.product-related__slide').slick({
     slidesToShow: 4,
@@ -57,7 +70,7 @@ $(function () {
     prevArrow: '<button class="product-related__prev"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#arrow-left"></use></svg></button>',
     nextArrow: '<button class="product-related__next"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#arrow-right"></use></svg></button>',
     centerPadding: '40px'
-  })
+  });
 
   $('.rpice-slider').ionRangeSlider({
     type: "double",
