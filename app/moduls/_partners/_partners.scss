@@ -12,4 +12,35 @@
     align-items: center;
     height: 180px;
   }
+  &__image{
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1024px){
+  .partners{
+    &__item{
+      height: 100px;
+    }
+    &__image{
+      max-width: 75%;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .partners{
+    &__item{
+      height: 50px;
+    }
+    &__image{
+      max-width: 65%;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .partners{
+    display: none;
+  }
 }

@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 80px 0 55px;
   border-bottom: 1px solid #dae4e9;
+  flex-wrap: wrap;
   font-size: 14px;
   line-height: 21px;
   @extend %dmsans-400;
@@ -12,8 +13,13 @@
     margin-right: 30px;
   }
   &__logo{
-    display: block;
+    display: flex;
+    justify-content: start;
     margin-bottom: 30px;
+    .logo__image{
+      margin-left: 0;
+      min-width: auto;
+    }
   }
   &__contacts{
     max-width: 240px;
@@ -73,7 +79,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
-  height: 90px;
+  min-height: 90px;
   color: $footer-text;
   &__nav-list{
     display: flex;
@@ -83,6 +89,41 @@
       margin-left: 15px;
       content: '|';
       margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .footer-top{
+    &__logo{
+      padding-left: 25px;
+    }
+    &__item--address,
+    &__item--nav{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .footer-top{
+    &__item--address,
+    &__item--descr{
+      max-width: 100%;
+      margin-right: 0;
+    }
+    &__item--nav{
+      margin-right: 0;
+    }
+  }
+  .footer-bottom{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0;
+    &__copy{
+      width: 100%;
+      text-align: center;
+      order: 1;
     }
   }
 }
