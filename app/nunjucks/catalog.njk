@@ -19,6 +19,11 @@
     <section class="product">
       <div class="container">
         <div class="product__inner">
+          <button class="product-filter__btn">
+            <svg class="icon">
+              <use xlink:href="images/svg/sprite/sprite.svg#filter"></use>
+            </svg>
+          </button>
           <div class="product-filter">
             {% include "app/moduls/_filter-category/_filter-category.html" %}
             {% include "app/moduls/_filter-price/_filter-price.html" %}
@@ -26,7 +31,7 @@
             {% include "app/moduls/_filter-products/_filter-products.html" %}
           </div>
           <div class="product-contant">
-            <div class="product-contant__list">
+            <div class="product-contant__grid">
             {% include "app/moduls/_products-item/_products-item.html" %}
               {% include "app/moduls/_products-item/_products-item.html" %}
               {% include "app/moduls/_products-item/_products-item.html" %}

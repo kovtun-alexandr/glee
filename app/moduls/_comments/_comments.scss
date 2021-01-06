@@ -51,3 +51,20 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .comments{
+    flex-direction: column;
+    &__img{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .comments{
+    &__content-date{
+      display: none;
+    }
+  }
+}

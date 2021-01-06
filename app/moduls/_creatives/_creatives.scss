@@ -82,3 +82,47 @@
     color: #4c4c4c;
   }
 }
+
+@media (max-width: 1200px){
+  .creatives{
+    &__inner{
+      flex-wrap: wrap;
+    }
+    &__img-box{
+      min-height: 685px;
+      margin: 0 auto;
+    }
+    &__contant{
+      max-width: 100%;
+    }
+    &__list{
+      justify-content: space-around;
+    }
+    &__item::after{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .creatives{
+    padding-bottom: 0;
+    margin-bottom: 60px;
+    &__contant{
+      padding-bottom: 0;
+    }
+    &__list{
+      flex-wrap: wrap;
+    }
+    &__item{
+      width: 200px;
+    }
+    // &__item::after{
+    //   display: initial;
+    //   width: 100%;
+    //   min-height: 2px;
+    //   top: auto;
+    //   right: 0;
+    // }
+  }
+}

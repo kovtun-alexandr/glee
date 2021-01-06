@@ -96,6 +96,7 @@ ol{
 .pagination{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 30px 0;
   &__arrows{
     padding: 13px 20px;
@@ -129,5 +130,17 @@ ol{
   &__link--active{
     background-color: $btn;
     color: #fff;
+  }
+}
+
+@media (max-width: 480px){
+  .pagination{
+    &__arrows{
+      display: none;
+    }
+    &__link{
+      width: 40px;
+      height: 40px;
+    }
   }
 }
