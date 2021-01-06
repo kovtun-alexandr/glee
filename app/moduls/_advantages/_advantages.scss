@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     background-color: #fef7f0;
-    padding: 40px 0;
+    padding: 40px 15px;
   }
   &__item{
     max-width: 370px;
@@ -15,9 +15,49 @@
   &__item-title{
     @extend %dmsans-700;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 24px;
+    margin: 8px 0;
   }
   &__item-descr{
     line-height: 30px;
+  }
+}
+
+@media (max-width: 1024px){
+  .advantages{
+    &__inner{
+      padding: 30px 15px;
+    }
+    &__item{
+      padding: 0px 15px 0px 65px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .advantages{
+    &__inner{
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    &__item{
+      max-width: 100%;
+      padding: 0px 0px 0px 85px;
+      margin-bottom: 20px;
+    }
+    &__item:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .advantages{
+    &__inner{
+      padding: 30px 15px;
+    }
+    &__item{
+      padding: 0px 0px 0px 65px;
+    }
   }
 }

@@ -72,7 +72,6 @@
     position: relative;
     width: 50px;
     height: 50px;
-    padding: 17px 0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -208,7 +207,7 @@ ul.user__nav-list{
 @media (max-width: 1024px){
   .logo{
     margin-right: auto;
-    padding-left: 25px;
+    margin-left: 25px;
   }
   ul.menu__list{
     padding: 20px 0;
@@ -263,13 +262,14 @@ ul.user__nav-list{
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: calc(100vw - 30px);
+      width: calc(100vw - 32px);
       background-color: #fff;
       top: 40px;
       transform: translateY(-150%);
     }
     &__list--active{
       transform: translateY(0);
+      z-index: 5;
     }
     &__item{
       padding: 12px 0;
@@ -304,21 +304,12 @@ ul.user__nav-list{
   }
   .header-search{
     &:hover > .header-search__input {
-      display: block;
-      right: -245px;
-      top: 60px;
-      width: calc(100vw - 30px);
-      height: 50px;
-      padding: 0 20px;
-    }
-    &__input{
       display: none;
     }
   }
   .header-search--active{
     .header-search__input{
-      display: block;
-      display: block;
+      display: block!important;
       right: -245px;
       top: 60px;
       width: calc(100vw - 30px);
@@ -347,6 +338,9 @@ ul.user__nav-list{
     order: 0;
   }
   .user{
+    &__nav-list{
+      top: 55px;
+    }
     &__nav-link{
       width: 40px;
       height: 40px;

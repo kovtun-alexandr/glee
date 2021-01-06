@@ -139,3 +139,22 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .star-form{
+    flex-direction: column;
+    &__label + .star-form__label{
+      margin-left: 0;
+    }
+  }
+  .comments-form{
+    &__inputbox{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    &__input-after--name,
+    &__input-after--email{
+      max-width: 100%;
+    }
+  }
+}

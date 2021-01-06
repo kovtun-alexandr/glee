@@ -1,6 +1,8 @@
 $(function () {
-  const prefix = '$',
-  postfix = '.00';
+
+  $('.product-filter__btn').on('click', function(){
+    $('.product-filter').slideToggle();
+  });
 
   $('.menu__btn').on('click', function(){
     $(this).toggleClass('menu__btn--active');
@@ -69,18 +71,45 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: '<button class="product-related__prev"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#arrow-left"></use></svg></button>',
     nextArrow: '<button class="product-related__next"><svg class="icon"><use xlink:href="images/svg/sprite/sprite.svg#arrow-right"></use></svg></button>',
-    centerPadding: '40px'
+    centerPadding: '40px',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          centerMode: true,
+          dots: true
+        }
+      }
+    ]
   });
+
+  const prefix = '$';
 
   $('.rpice-slider').ionRangeSlider({
     type: "double",
     onStart: function (data) {
-      $('.filter-rpice__from').text(prefix.concat(data.from, postfix));
-      $('.filter-rpice__to').text(prefix.concat(data.to, postfix));
+      $('.filter-rpice__from').text(prefix.concat(data.from.toFixed(2)));
+      $('.filter-rpice__to').text(prefix.concat(data.to.toFixed(2)));
     },
     onChange: function (data) {
-      $('.filter-rpice__from').text(prefix.concat(data.from, postfix));
-      $('.filter-rpice__to').text(prefix.concat(data.to, postfix));
+      $('.filter-rpice__from').text(prefix.concat(data.from.toFixed(2)));
+      $('.filter-rpice__to').text(prefix.concat(data.to.toFixed(2)));
     }
   });
 
@@ -88,7 +117,7 @@ $(function () {
     dots: true,
     arrows: false,
     fade: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000
   });
 

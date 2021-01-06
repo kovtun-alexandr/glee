@@ -22,3 +22,13 @@
     color: #4c4c4c;
   }
 }
+
+@media (max-width: 768px){
+  .our-advantages{
+    &__list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 20px;
+    }
+  }
+}
