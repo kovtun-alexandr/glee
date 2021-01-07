@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log in</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/login.min.css">
 </head>
 
 <body>
@@ -13,83 +13,11 @@
   {% include "app/moduls/_header/_header.html" %}
 
   <main class="main">
-
-    <section class="top">
-      <div class="container">
-        <h2 class="top__title">Log in</h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Home
-              </a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Log in
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="modal">
-      <div class="container">
-        <div class="modal__inner">
-        <form class="modal__form" action="#">
-          <label class="modal__label">
-            Username or email address *
-            <input class="modal__input" type="text" required>
-          </label>
-          <label class="modal__label">
-            Password *
-            <input class="modal__input" type="password" required>
-          </label>
-          <button class="modal__btn-submit" type="submit">Login</button>
-          <div class="modal__info">
-            <label class="modal__info-label">
-              <input class="modal__info-input" type="checkbox">
-              Remember me
-            </label>
-            <a class="modal__info-link" href="#">Lost your password?</a>
-          </div>
-        </form>
-        <div class="modal__createAccount">
-          <p class="modal__text">
-            Not registered? No problem
-          </p>
-          <a class="modal__link-account" href="#">Create an account</a>
-        </div>
-      </div>
-
-      </div>
-    </section>
-    
+    {% include "app/moduls/_top/_top.html" %}
+    {% include "app/moduls/_modal/_modal.html" %}
+    {% include "app/moduls/_partners/_partners.html" %}
   </main>
   
-  <div class="partners">
-    <div class="container">
-      <div class="partners__items">
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/1.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/2.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/3.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/4.png" alt="partners logo">
-        </div>
-        <div class="partners__item">
-          <img class="partners__image" src="images/partners/5.png" alt="partners logo">
-        </div>
-      </div>
-    </div>
-  </div>
-
   {% include "app/moduls/_footer/_footer.html" %}
 
   <script src="js/main.min.js"></script>
