@@ -54,6 +54,9 @@
     margin-bottom: 35px;
     color: $footer-text;
   }
+  &__form{
+    display: flex;
+  }
   &__form-input{
     background-color: #fef7f0;
     padding: 9px 15px;
